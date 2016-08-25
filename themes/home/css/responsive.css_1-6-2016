@@ -1,0 +1,164 @@
+@media screen and (min-width: 1025px) {
+
+#pricePlans {
+	margin: 2em auto;
+}
+
+#pricePlans #plans .plan {
+	width: 24%;
+	margin: 0 1.33% 20px 0;
+
+	-webkit-transition: all .25s;
+	   -moz-transition: all .25s;
+	    -ms-transition: all .25s;
+	     -o-transition: all .25s;
+	        transition: all .25s;
+}
+
+#pricePlans #plans > li:last-child {
+	margin-right: 0;
+}
+
+#pricePlans #plans .plan:hover {
+	-webkit-transform: scale(1.04);
+	   -moz-transform: scale(1.04);
+	    -ms-transform: scale(1.04);
+	     -o-transform: scale(1.04);
+	        transform: scale(1.04);
+}
+
+.planContainer .button a {
+	-webkit-transition: all .25s;
+	   -moz-transition: all .25s;
+	    -ms-transition: all .25s;
+	     -o-transition: all .25s;
+	        transition: all .25s;
+}
+
+.planContainer .button a:hover {
+	background: #7d0000;
+	color: #fff;
+}
+
+.planContainer .button a.bestPlanButton:hover {
+	background: #ff9c70;
+	border: 2px solid #ff9c70;
+}
+
+}
+
+
+
+@media screen and (max-width:1300px) {
+	.sound_bar{ width:25%; height:38px; overflow:hidden;}
+	
+	
+}
+@media screen and (max-width:1100px) {
+	.sub_top{width: 85%;}
+	.slider_con{width: 90%; left:5%;}
+	.b_col{ padding:15px;}
+	.slider_p .owl-nav{top: 50%;}
+	/*.a_list .i_info .l_titel li{ position:relative;}*/
+	.a_list .i_info .l_titel li span{display:none;}
+	.jp-volume-controls{ width:75px;}
+	.jp-volume-bar{width:50px;}
+	.b_wrap h2{ white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+	
+	.sub_top {width: 80%;}
+	.a_list > li{ width:25%;}
+}
+@media screen and (max-width:1000px) {
+	.h_menu > li{ margin:0 0 0 25px;}
+	.jp-volume-controls{ width:auto; margin-right:10px;}
+	.jp-volume-bar{ display:none;}
+	.s_box{ width:130px;}
+	.b_wrap p{ height:90px; overflow:hidden;}
+	.sound_bar{ width:20%;}
+}
+@media screen and (max-width:800px) {
+	.header .col-md-2{ width:15%; float:left; padding:0;}
+	.header .col-md-10{ width:85%; float:left;}
+	.h_menu > li{margin: 0 0 0 15px;}
+	.sub_top {width: 80%;}
+	.bcon_top{ padding:10px;}
+	.bcon_top h1{white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+	.slider_con{ top:3%;}
+	.a_list > li{ width:25%;}
+	.s_titel{ width:75px;}
+	.sound_bar{width: 15%;}
+	
+	.sub_top{ width:75%;}
+	.t_bar{ padding: 5px 10px;}
+	.sub_top li a{ padding:5px;}
+	.a_list > li{ width:33.33%;}
+	
+#pricePlans #plans .plan {
+	width: 49%;
+	margin: 0 2% 20px 0;
+}
+
+#pricePlans #plans > li:nth-child(2n) {
+	margin-right: 0;
+}	
+}
+
+@media screen and (max-width:767px) {
+	.header .col-md-2{ width:100%; float:none; padding:0 15px; text-align:center;}
+	.header .col-md-10{ width:100%; float:none;}
+	.h_menu{text-align:center;}
+	.h_menu > li{margin: 0 0 0 25px;}
+	.h_menu li:first-child{width:100%; float:none; margin:0; }
+	.search{ width:60%; margin:0 auto;}
+	.s_box {width: 90%;}
+	.red_bar{ padding:5px 25px;}
+	.sub_top {width: 78%;}
+	.a_list > li{ width:33.33%;}
+	.bcon_bottom{ display:none;}
+	.slider_con{ top:25%;}
+	.footer{ height:auto; text-align:center; padding:5px 0;}
+	.s_info, .sound_bar, .jp-type-playlist{ float:none; display:inline-block; vertical-align:middle;}
+	.sound_bar{ width:25%;}
+	
+	.left_bar{display:block; width:96%; margin:10px 2%; text-align:center; padding:0;}
+	.left_bar a{ display:inline-block; margin:0 15px; padding:10px;}
+	.left_menu{display:block; width:96%; margin:10px 2%;}
+	.right_pan{display:block; width:96%; margin:10px 2%;}
+	.tilel_bar h4{ display:block; width:100%; float:none; text-align:center;}
+	.pro_con{ width:90%;}
+	
+	
+#pricePlans #plans .plan {
+	width: 49%;
+	margin: 0 2% 20px 0;
+}
+
+#pricePlans #plans > li:nth-child(2n) {
+	margin-right: 0;
+}	
+	
+	
+}
+@media screen and (max-width:599px) {
+	.search{ width:80%;}
+	.s_box {width: 85%;}
+	.red_bar{padding: 5px 5px; text-align:center;}
+	.sub_top li a{ padding:5px 7px; font-size:12px; font-weight:600;}
+	.sub_top{ width:100%; float:none;}
+	.av_tab{ float:none; width:125px; margin:10px auto 0;}
+	.a_list > li{ width:100%; float:none; margin:0 auto;}
+	.s_info{ margin:0;}
+	.s_info .l_titel{width: 188px;}
+	.sound_bar{ width:90%; margin:10px auto;}
+	
+	.togg_bar{ display:block;}
+	.header .col-md-10{ position:relative;}
+	.header .h_menu{ position:static; z-index:99; top:100%; left:0; width:100%; background:#666; padding:10px 0; display:none;}
+	.h_menu>li{ display:block; width:100%; margin:0; border-bottom:1px solid #333;}
+	.h_menu>li:first-child{ border:none;}
+	.h_menu li .sub_menu{ display:none; position:static; width:100%; background:none; border:none; box-shadow:none; text-align:center;}
+	.h_menu li a{ padding:15px 0;}
+	.h_menu li .sub_menu a{ text-align:center;}
+	.h_menu li:hover .sub_menu{ display:none;}
+}
+
