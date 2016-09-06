@@ -13,13 +13,7 @@
 
 $(function () {
     'use strict';
-    var mode = $(".file_mode:checked").val();
-    alert(mode);
-    $(document).on("click",".file_mode",function(){
-        if($(this).is(":checked")){
-            mode = $(".file_mode:checked").val();
-        }
-    });
+    
     // Initialize the jQuery File Upload widget:
     $('#fileupload').fileupload({
         // Uncomment the following to send cross-domain cookies:
@@ -89,17 +83,24 @@ $(function () {
     
      $('#fileupload_remix').bind('fileuploadsubmit', function (e, data) {
         // The example input, doesn't have to be part of the upload form:
-        data.formData = {mode: mode};
-        if (!data.formData.mode) {
-          data.context.find('button').prop('disabled', false);
-          input.focus();
-          return false;
+        var parent_songs = $("#parent_original_songs").val();
+        data.formData = {parent_songs: parent_songs};
+        //alert(parent_songs);
+        if (!data.formData.parent_songs) {
+           data.context.find('button').prop('disabled', false);
+           //alert("Please select the parent first");
+           $("#source_song_err").show();
+           return false;
         }
+        else
+        {
+            $("#source_song_err").hide();
+        }    
     }).fileupload({
         // Uncomment the following to send cross-domain cookies:
         //xhrFields: {withCredentials: true},
         url: base_url+'/admin/remix/upload',
-        // formData: {mode: mode},
+        //formData: {parent_songs: parent_songs},
     });
     
     
@@ -136,7 +137,7 @@ $(function () {
                 $('<div class="alert alert-danger"/>')
                     .text('Upload server currently unavailable - ' +
                             new Date())
-                    .appendTo('#fileupload');
+                    .appendTo('#fileupload_remix');
             });
         }
     } else {

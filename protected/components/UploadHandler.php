@@ -1361,23 +1361,67 @@ class UploadHandler
                 );
             }
         }
+        if($this->data['scenario'] == 'original')
+        {    
         
-         Yii::import("application.modules.admin.models.OriginalMedia", true);
-        foreach($files as $file)
-        {
-            $m_type = 2; // for video
-            if($file->type == "audio/mp3" || $file->type == "audio/mpeg")
-            {
-                $m_type = 1;  // for audio
-            }
-            $model = new OriginalMedia;
-            $model->file_name = $file->name;
-            $model->file_type = $file->type;
-            $model->file_size = $file->size;
-            $model->binary_data = "123456";
-            $model->validate();
-            $model->save();
+            Yii::import("application.modules.admin.models.OriginalMedia", true);
+           foreach($files as $file)
+           {
+               $m_type = 2; // for video
+               if($file->type == "audio/mp3" || $file->type == "audio/mpeg")
+               {
+                   $m_type = 1;  // for audio
+               }
+               $model = new OriginalMedia;
+               $model->file_name = $file->name;
+               $model->file_type = $file->type;
+               $model->file_size = $file->size;
+               $model->binary_data = "123456";
+               $model->validate();
+               $model->save();
+           }
         }
+        else if($this->data['scenario'] == 'remix')
+        {
+            Yii::import("application.modules.admin.models.RemixMedia", true);
+            Yii::import("application.modules.admin.models.OriginalRemix", true);
+            $parent_songs_strings = $this->data['parent_songs'];
+            $parent_songs_arr = explode(',',$parent_songs_strings);
+            //pre($parent_songs_arr,true);
+            
+            foreach($files as $file)
+            {
+                $m_type = 2; // for video
+                if($file->type == "audio/mp3" || $file->type == "audio/mpeg")
+                {
+                    $m_type = 1;  // for audio
+                }
+                $model = new RemixMedia;
+                $model->file_name = $file->name;
+                $model->file_type = $file->type;
+                $model->file_size = $file->size;
+                $model->binary_data = "123456";
+                $model->validate();
+                $model->save();
+                
+                // for entry in the original_remix table
+                
+                
+                foreach($parent_songs_arr as $parent_song)
+                {
+                    $or_model = new OriginalRemix;
+                    $or_model->original_song_id = $parent_song;
+                    $or_model->remix_song_id = $model->id;
+                    $or_model->validate();
+                    $or_model->save();
+                }    
+            
+                
+                
+                
+            }
+        }    
+        
         $response = array($this->options['param_name'] => $files);
         return $this->generate_response($response, $print_response);
     }

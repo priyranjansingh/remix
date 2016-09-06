@@ -2089,3 +2089,1259 @@ Stack trace:
 REQUEST_URI=/remix/admin/remix/[object%20Object]
 HTTP_REFERER=http://localhost/remix/admin/remix/create
 ---
+2016/09/03 13:41:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/03 13:41:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/03 13:41:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/03 13:41:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/03 13:41:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "originalsong".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('originalsong')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('originalsong')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/o...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/originalsong/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/originalsong/create
+---
+2016/09/03 14:16:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "originalsong".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('originalsong')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('originalsong')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/o...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/originalsong/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/originalsong/create
+---
+2016/09/03 14:17:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "originalsong".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('originalsong')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('originalsong')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/o...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/originalsong/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/originalsong/create
+---
+2016/09/03 14:18:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "originalsong".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('originalsong')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('originalsong')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/o...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/originalsong/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/originalsong/create
+---
+2016/09/03 14:19:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/04 07:17:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/04 07:17:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/04 07:18:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "originalsong".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('originalsong')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('originalsong')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/o...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/originalsong/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/originalsong/create
+---
+2016/09/04 16:37:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/04 16:37:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/04 16:37:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "originalsong".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('originalsong')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('originalsong')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/o...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/originalsong/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/originalsong/create
+---
+2016/09/04 16:38:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "originalsong".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('originalsong')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('originalsong')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/o...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/originalsong/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/originalsong/create
+---
+2016/09/04 16:38:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/04 16:55:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/04 16:55:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/04 16:57:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/04 16:57:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/ajax.php?q=a
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/04 16:57:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/ajax.php?q=as
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/04 16:57:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/ajax.php?q=asd
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/04 16:57:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/ajax.php?q=asdf
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/04 16:57:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/04 17:00:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/04 17:01:35 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/04 17:02:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 03:52:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/05 03:52:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/05 03:52:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/05 03:53:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 04:19:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 04:19:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 04:24:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 04:29:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 06:13:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 06:16:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 06:18:48 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 06:22:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 06:24:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 06:25:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "originalsong".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('originalsong')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('originalsong')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/o...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/originalsong/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/originalsong/create
+---
+2016/09/05 06:30:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "originalsong".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('originalsong')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('originalsong')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/o...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/originalsong/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/originalsong/create
+---
+2016/09/05 06:30:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 06:36:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 06:36:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "originalsong".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('originalsong')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('originalsong')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/o...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/originalsong/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/originalsong/create
+---
+2016/09/05 06:36:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 06:37:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 06:39:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 06:40:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 07:51:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/05 07:51:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/05 07:53:56 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 07:54:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 08:50:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 10:31:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/05 10:31:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/05 10:32:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 10:44:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 10:46:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 10:46:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 10:47:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 10:52:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 10:53:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 10:56:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 11:01:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 11:04:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 11:17:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 11:56:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\remix\protected\modules\admin\controllers\OriginalsongController.php:135
+Stack trace:
+#0 C:\xampp\htdocs\remix\protected\modules\admin\controllers\OriginalsongController.php(58): OriginalsongController->loadModel('187c6adf-82cd-f...')
+#1 [internal function]: OriginalsongController->actionUpdate('187c6adf-82cd-f...')
+#2 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OriginalsongController), Array)
+#3 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OriginalsongController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('update')
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/originals...')
+#9 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/remix/index.php/admin/originalsong/update?id=187c6adf-82cd-fc2c-009a-57ccf7f4ea74
+HTTP_REFERER=http://localhost/remix/index.php/admin/originalsong/manage
+---
+2016/09/05 11:56:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 12:42:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 12:42:26 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 12:44:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 12:44:29 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 12:45:56 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload/?file=Sleep%20Away%20%281%29.mp3
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 12:46:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 12:46:03 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 12:47:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 12:47:32 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 13:16:47 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 13:16:47 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 13:43:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 13:43:32 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 13:44:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 13:44:07 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 13:55:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 13:55:14 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 13:56:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 13:56:09 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 13:58:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 13:58:06 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 13:59:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 13:59:44 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 14:01:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 14:01:58 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 14:08:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "originalsong".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('originalsong')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('originalsong')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/o...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/originalsong/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/originalsong/create
+---
+2016/09/05 14:09:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 14:09:31 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 14:11:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 14:11:24 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 14:11:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 14:11:51 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 14:12:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/05 14:12:50 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/05 14:17:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\remix\protected\modules\admin\controllers\PlansController.php:169
+Stack trace:
+#0 C:\xampp\htdocs\remix\protected\modules\admin\controllers\PlansController.php(30): PlansController->loadModel('c1fac4d8-8fa5-6...')
+#1 [internal function]: PlansController->actionView('c1fac4d8-8fa5-6...')
+#2 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PlansController), Array)
+#3 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PlansController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/plans/vie...')
+#9 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/remix/index.php/admin/plans/view?id=c1fac4d8-8fa5-6c51-7e8d-57cd6072d19d
+HTTP_REFERER=http://localhost/remix/index.php/admin/remix/manage
+---
+2016/09/05 14:17:50 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\remix\protected\modules\admin\controllers\PlansController.php:169
+Stack trace:
+#0 C:\xampp\htdocs\remix\protected\modules\admin\controllers\PlansController.php(87): PlansController->loadModel('c1fac4d8-8fa5-6...')
+#1 [internal function]: PlansController->actionUpdate('c1fac4d8-8fa5-6...')
+#2 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PlansController), Array)
+#3 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PlansController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('update')
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/plans/upd...')
+#9 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/remix/index.php/admin/plans/update?id=c1fac4d8-8fa5-6c51-7e8d-57cd6072d19d
+HTTP_REFERER=http://localhost/remix/index.php/admin/remix/manage
+---
+2016/09/06 08:22:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/06 08:22:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/06 08:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/06 08:36:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/06 08:36:58 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/06 08:36:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/06 08:37:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/06 08:37:43 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/06 08:39:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/06 08:39:11 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)

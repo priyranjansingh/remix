@@ -40,17 +40,38 @@ class RemixController extends Controller {
             'model' => $model,
         ));
     }
- 
+
+    public function actionSearchOriginal() {
+        $srch_string = $_GET['q'];
+
+        $q = new CDbCriteria();
+        $q->addSearchCondition('file_name', $srch_string);
+
+        $songs = OriginalMedia::model()->findAll($q);
+        $arr = array();
+        $ret = array();
+        if (!empty($songs)) {
+            foreach ($songs as $song) {
+                $temp_arr = array();
+                $temp_arr['id'] = $song->id;
+                $temp_arr['text'] = $song->file_name;
+                array_push($arr, $temp_arr);
+            }
+        }
+        $ret['results'] = $arr;
+        echo json_encode($ret);
+    }
+
     public function actionUpload() {
-         if (isset($_REQUEST['mode'])) {
-            $mode = $_REQUEST['mode'];
-            pre($mode,true);
+        if (isset($_REQUEST['parent_songs'])) {
+            $parent_songs = $_REQUEST['parent_songs'];
         }
         $script_url = "admin/remix/upload/";
         $upload_dir = "assets/uploads/remix/";
         $data = array();
         $data['scenario'] = 'remix';
-        $upload_handler = new UploadHandler(null,true,null,$script_url,$upload_dir,$data); // this has been defined in the components
+        $data['parent_songs'] = $parent_songs;
+        $upload_handler = new UploadHandler(null, true, null, $script_url, $upload_dir, $data); // this has been defined in the components
     }
 
     /**
