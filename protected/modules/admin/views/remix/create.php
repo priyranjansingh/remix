@@ -16,7 +16,7 @@
 				<div class="box-header with-border">
 					<h3 class="box-title">Remix Songs</h3>
 				</div>
-				<?php $this->renderPartial('_form', array('model'=>$model)); ?>
+				<?php $this->renderPartial('_form', array('model'=>$model,'version_arr'=>$version_arr,'genre_arr' => $genre_arr)); ?>
 			</div>
 		</div>
 	</div>

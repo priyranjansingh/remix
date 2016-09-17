@@ -8,7 +8,11 @@
 )); ?>
 <div class="box-body">
 	<div class="form-group">
-		
+		<div class="col-xs-6">
+			<?php echo $form->labelEx($model,'parent_id'); ?>
+			<?php echo $form->dropDownList($model,'parent_id',$parent,array('disabled'=>$model->isNewRecord ? '' : 'disabled','empty'=>'Select Parent','class' => 'form-control')); ?>
+			<?php echo $form->error($model,'parent_id'); ?>
+		</div>
 		<div class="col-xs-6">
 			<?php echo $form->labelEx($model,'name'); ?>
 			<?php echo $form->textField($model,'name',array('size'=>'60','maxlength'=>'128','class' => 'form-control')); ?>

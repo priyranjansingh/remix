@@ -3345,3 +3345,1709 @@ Stack trace:
 REQUEST_URI=/remix/admin/remix/upload
 in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
 in C:\xampp\htdocs\remix\index.php (13)
+2016/09/06 10:55:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:141
+Stack trace:
+#0 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(90): GenresController->loadModel('af39399a-ffa9-6...')
+#1 [internal function]: GenresController->actionDelete('af39399a-ffa9-6...')
+#2 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GenresController), Array)
+#3 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GenresController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('delete')
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/genres/de...')
+#9 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/remix/index.php/admin/genres/delete?id=af39399a-ffa9-6066-b1c9-57ce84f5cdfd
+HTTP_REFERER=http://localhost/remix/index.php/admin/version/manage
+---
+2016/09/06 12:05:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/06 12:05:28 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/06 12:08:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/06 12:08:07 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/06 12:10:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/06 12:10:40 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/06 12:12:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/06 12:12:22 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/06 12:14:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/06 12:14:19 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/06 12:18:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/06 12:18:11 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/06 12:20:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/06 12:20:07 [error] [php] Undefined variable: parent_songs (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:73)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (73)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/06 12:21:30 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "remix".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('remix')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('remix')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/r...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/[object%20Object]
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/07 03:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/07 03:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/07 03:38:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/07 03:38:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/07 04:16:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/07 04:16:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/07 04:16:43 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/07 08:37:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/07 08:37:54 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/07 08:37:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/07 12:29:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/07 12:29:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/07 15:40:32 [error] [php] mkdir(): File exists (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:46)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#4 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/genres/create
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (46)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/08 08:58:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/08 08:58:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/08 08:58:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/08 08:58:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/09 04:34:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/09 04:34:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/09 09:08:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/09 09:08:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/09 09:08:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/09 10:27:21 [error] [php] Undefined variable: parent (C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#1 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\create.php(19): GenresController->renderPartial()
+#2 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): GenresController->renderInternal()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(782): GenresController->renderPartial()
+#6 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(61): GenresController->render()
+#7 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): GenresController->actionCreate()
+#8 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#10 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#11 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#12 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/genres/create
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php (13)
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\create.php (19)
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (61)
+2016/09/09 14:08:01 [error] [exception.CDbException] exception 'CDbException' with message 'CDbConnection failed to open the DB connection: SQLSTATE[HY000] [2002] No connection could be made because the target machine actively refused it.
+' in C:\xampp\htdocs\remix\framework\db\CDbConnection.php:399
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\db\CDbConnection.php(347): CDbConnection->open()
+#1 C:\xampp\htdocs\remix\framework\db\CDbConnection.php(325): CDbConnection->setActive(true)
+#2 C:\xampp\htdocs\remix\framework\base\CModule.php(394): CDbConnection->init()
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(459): CModule->getComponent('db')
+#4 C:\xampp\htdocs\remix\framework\db\ar\CActiveRecord.php(637): CApplication->getDb()
+#5 C:\xampp\htdocs\remix\framework\db\ar\CActiveRecord.php(670): CActiveRecord->getDbConnection()
+#6 C:\xampp\htdocs\remix\framework\db\ar\CActiveRecord.php(1460): CActiveRecord->getCommandBuilder()
+#7 C:\xampp\htdocs\remix\protected\modules\admin\components\UserIdentity.php(29): CActiveRecord->find(Array)
+#8 C:\xampp\htdocs\remix\protected\modules\admin\models\LoginForm.php(60): UserIdentity->authenticate()
+#9 C:\xampp\htdocs\remix\framework\validators\CInlineValidator.php(42): LoginForm->authenticate('password', Array)
+#10 C:\xampp\htdocs\remix\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(LoginForm), 'password')
+#11 C:\xampp\htdocs\remix\framework\base\CModel.php(159): CValidator->validate(Object(LoginForm), NULL)
+#12 C:\xampp\htdocs\remix\protected\modules\admin\controllers\LoginController.php(20): CModel->validate()
+#13 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): LoginController->actionIndex()
+#14 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#15 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#16 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#17 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('')
+#18 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/login')
+#19 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#21 {main}
+REQUEST_URI=/remix/index.php/admin/login
+HTTP_REFERER=http://localhost/remix/index.php/admin/login
+---
+2016/09/09 14:08:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/09 14:08:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/09 14:08:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/09 15:03:53 [error] [exception.CException] exception 'CException' with message 'GenresController and its behaviors do not have a method or closure named "getParent".' in C:\xampp\htdocs\remix\framework\base\CComponent.php:266
+Stack trace:
+#0 [internal function]: CComponent->__call('getParent', Array)
+#1 [internal function]: GenresController->getParent(Object(Genres), 0, Object(CDataColumn))
+#2 C:\xampp\htdocs\remix\framework\base\CComponent.php(617): call_user_func_array(Array, Array)
+#3 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CDataColumn.php(142): CComponent->evaluateExpression(Array, Array)
+#4 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent(0)
+#5 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CGridColumn.php(154): CGridColumn->renderDataCellContent(0, Object(Genres))
+#6 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CGridView.php(638): CGridColumn->renderDataCell(0)
+#7 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell(Object(CDataColumn), 0)
+#8 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow(0)
+#9 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#10 C:\xampp\htdocs\remix\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#11 [internal function]: CBaseListView->renderSection(Array)
+#12 C:\xampp\htdocs\remix\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback('/{(\w+)}/', Array, '{summary}?{item...')
+#13 C:\xampp\htdocs\remix\framework\zii\widgets\CBaseListView.php(149): CBaseListView->renderContent()
+#14 C:\xampp\htdocs\remix\framework\web\CBaseController.php(181): CBaseListView->run()
+#15 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\admin.php(92): CBaseController->widget('zii.widgets.gri...', Array)
+#16 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#17 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#18 C:\xampp\htdocs\remix\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#19 C:\xampp\htdocs\remix\framework\web\CController.php(782): CController->renderPartial('admin', Array, true)
+#20 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(123): CController->render('admin', Array)
+#21 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): GenresController->actionManage()
+#22 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#23 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#24 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#25 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('manage')
+#26 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/genres/ma...')
+#27 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#28 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#29 {main}
+REQUEST_URI=/remix/index.php/admin/genres/manage
+HTTP_REFERER=http://localhost/remix/admin/genres/create
+---
+2016/09/09 15:08:15 [error] [php] Undefined variable: theCellValue (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:173)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CDataColumn.php(142): CDataColumn->evaluateExpression()
+#1 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CGridColumn.php(231): CDataColumn->getDataCellContent()
+#2 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CGridColumn.php(154): CDataColumn->renderDataCellContent()
+#3 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CGridView.php(638): CDataColumn->renderDataCell()
+#4 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CGridView.php(622): CGridView->renderDataCell()
+#5 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CGridView.php(578): CGridView->renderTableRow()
+#6 C:\xampp\htdocs\remix\framework\zii\widgets\grid\CGridView.php(488): CGridView->renderTableBody()
+#7 C:\xampp\htdocs\remix\framework\zii\widgets\CBaseListView.php(181): CGridView->renderItems()
+#8 unknown(0): CGridView->renderSection()
+#9 C:\xampp\htdocs\remix\framework\zii\widgets\CBaseListView.php(164): preg_replace_callback()
+#10 C:\xampp\htdocs\remix\framework\zii\widgets\CBaseListView.php(149): CGridView->renderContent()
+#11 C:\xampp\htdocs\remix\framework\web\CBaseController.php(181): CGridView->run()
+#12 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\admin.php(92): GenresController->widget()
+#13 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require()
+#14 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): GenresController->renderInternal()
+#15 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#16 C:\xampp\htdocs\remix\framework\web\CController.php(782): GenresController->renderPartial()
+#17 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(123): GenresController->render()
+#18 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): GenresController->actionManage()
+#19 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#20 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#21 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#22 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#23 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#24 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#25 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/manage
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (173)
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\admin.php (92)
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (123)
+2016/09/09 15:50:30 [error] [php] Undefined variable: parent (C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php:14)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#1 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\update.php(19): GenresController->renderPartial()
+#2 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): GenresController->renderInternal()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(782): GenresController->renderPartial()
+#6 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(89): GenresController->render()
+#7 unknown(0): GenresController->actionUpdate()
+#8 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#12 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#13 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#14 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/update?id=1b030e9b-a4fa-f0b5-0ef6-57d018d7fc8b
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php (14)
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\update.php (19)
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (89)
+2016/09/09 16:08:02 [error] [php] htmlspecialchars() expects parameter 1 to be string, array given (C:\xampp\htdocs\remix\framework\web\helpers\CHtml.php:108)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\utils\CFormatter.php(128): CFormatter->formatText()
+#1 C:\xampp\htdocs\remix\framework\zii\widgets\CDetailView.php(220): CFormatter->format()
+#2 C:\xampp\htdocs\remix\framework\web\CBaseController.php(181): CDetailView->run()
+#3 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\view.php(38): GenresController->widget()
+#4 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): GenresController->renderInternal()
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#7 C:\xampp\htdocs\remix\framework\web\CController.php(782): GenresController->renderPartial()
+#8 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(29): GenresController->render()
+#9 unknown(0): GenresController->actionView()
+#10 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#11 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#12 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#14 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#15 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#16 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/view?id=4edc8a00-187f-b104-0e03-57d2744ea513
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\view.php (38)
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (29)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/09 16:25:23 [error] [php] Missing argument 1 for Genres::getParent(), called in C:\xampp\htdocs\remix\framework\base\CComponent.php on line 188 and defined (C:\xampp\htdocs\remix\protected\modules\admin\models\Genres.php:112)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\helpers\CHtml.php(2333): Genres->__isset()
+#1 C:\xampp\htdocs\remix\framework\zii\widgets\CDetailView.php(216): value()
+#2 C:\xampp\htdocs\remix\framework\web\CBaseController.php(181): CDetailView->run()
+#3 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\view.php(38): GenresController->widget()
+#4 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): GenresController->renderInternal()
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#7 C:\xampp\htdocs\remix\framework\web\CController.php(782): GenresController->renderPartial()
+#8 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(29): GenresController->render()
+#9 unknown(0): GenresController->actionView()
+#10 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#11 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#12 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#14 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#15 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#16 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/view?id=1b030e9b-a4fa-f0b5-0ef6-57d018d7fc8b
+in C:\xampp\htdocs\remix\protected\modules\admin\models\Genres.php (112)
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\view.php (38)
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (29)
+2016/09/09 16:26:01 [error] [php] Missing argument 1 for Genres::getParent(), called in C:\xampp\htdocs\remix\framework\base\CComponent.php on line 188 and defined (C:\xampp\htdocs\remix\protected\modules\admin\models\Genres.php:112)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\helpers\CHtml.php(2333): Genres->__isset()
+#1 C:\xampp\htdocs\remix\framework\zii\widgets\CDetailView.php(216): value()
+#2 C:\xampp\htdocs\remix\framework\web\CBaseController.php(181): CDetailView->run()
+#3 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\view.php(38): GenresController->widget()
+#4 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require()
+#5 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): GenresController->renderInternal()
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#7 C:\xampp\htdocs\remix\framework\web\CController.php(782): GenresController->renderPartial()
+#8 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(29): GenresController->render()
+#9 unknown(0): GenresController->actionView()
+#10 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#11 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#12 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#13 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#14 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#15 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#16 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#17 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/view?id=1b030e9b-a4fa-f0b5-0ef6-57d018d7fc8b
+in C:\xampp\htdocs\remix\protected\modules\admin\models\Genres.php (112)
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\view.php (38)
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (29)
+2016/09/09 16:50:42 [error] [php] Undefined variable: parent (C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php:14)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#1 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\update.php(19): GenresController->renderPartial()
+#2 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): GenresController->renderInternal()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(782): GenresController->renderPartial()
+#6 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(89): GenresController->render()
+#7 unknown(0): GenresController->actionUpdate()
+#8 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#12 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#13 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#14 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/update?id=1b030e9b-a4fa-f0b5-0ef6-57d018d7fc8b
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php (14)
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\update.php (19)
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (89)
+2016/09/10 06:01:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/10 06:01:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/10 06:01:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/10 06:28:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "remix/default/GetSubgenre".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('remix/default/G...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/remix/GetSubgenre
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/10 06:29:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "remix/default/GetSubgenre".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('remix/default/G...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/remix/GetSubgenre
+---
+2016/09/10 06:29:25 [error] [system.db.CDbCommand] CDbCommand::fetchAll() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column '28a16bb0' in 'where clause'. The SQL statement executed was: SELECT * FROM `genres` `t` WHERE parent_id = 28a16bb0-47f9-f7e1-d877-573ef5be19d0.
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (206)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/10 06:29:25 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column '28a16bb0' in 'where clause'. The SQL statement executed was: SELECT * FROM `genres` `t` WHERE parent_id = 28a16bb0-47f9-f7e1-d877-573ef5be19d0' in C:\xampp\htdocs\remix\framework\db\CDbCommand.php:543
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\db\CDbCommand.php(396): CDbCommand->queryInternal('fetchAll', Array, Array)
+#1 C:\xampp\htdocs\remix\framework\db\ar\CActiveRecord.php(1356): CDbCommand->queryAll()
+#2 C:\xampp\htdocs\remix\framework\db\ar\CActiveRecord.php(1475): CActiveRecord->query(Object(CDbCriteria), true)
+#3 C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php(206): CActiveRecord->findAll(Array)
+#4 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): RemixController->actionGetSubgenre()
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('GetSubgenre')
+#9 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/remix/Get...')
+#10 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/remix/admin/remix/GetSubgenre
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/10 07:45:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/10 07:45:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/10 07:45:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/10 07:45:53 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/10 08:23:26 [error] [php] Undefined variable: parent_model (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:57)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/genres/create
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (57)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/10 08:41:33 [error] [php] Undefined index: sub_genre (C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php:92)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php (92)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/10 08:44:08 [error] [exception.CException] exception 'CException' with message 'Property "RemixMedia.sub_genre" is not defined.' in C:\xampp\htdocs\remix\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\db\ar\CActiveRecord.php(161): CComponent->__set('sub_genre', 'ee119175-ff7c-c...')
+#1 C:\xampp\htdocs\remix\protected\components\UploadHandler.php(1408): CActiveRecord->__set('sub_genre', 'ee119175-ff7c-c...')
+#2 C:\xampp\htdocs\remix\protected\components\UploadHandler.php(189): UploadHandler->post(true)
+#3 C:\xampp\htdocs\remix\protected\components\UploadHandler.php(173): UploadHandler->initialize()
+#4 C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php(114): UploadHandler->__construct(NULL, true, NULL, 'admin/remix/upl...', 'assets/uploads/...', Array)
+#5 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): RemixController->actionUpload()
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('upload')
+#10 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/remix/upl...')
+#11 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/remix/admin/remix/upload
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/10 09:05:08 [error] [exception.CException] exception 'CException' with message 'Property "RemixMedia.sub_genre" is not defined.' in C:\xampp\htdocs\remix\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\db\ar\CActiveRecord.php(161): CComponent->__set('sub_genre', 'ee119175-ff7c-c...')
+#1 C:\xampp\htdocs\remix\protected\components\UploadHandler.php(1408): CActiveRecord->__set('sub_genre', 'ee119175-ff7c-c...')
+#2 C:\xampp\htdocs\remix\protected\components\UploadHandler.php(189): UploadHandler->post(true)
+#3 C:\xampp\htdocs\remix\protected\components\UploadHandler.php(173): UploadHandler->initialize()
+#4 C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php(114): UploadHandler->__construct(NULL, true, NULL, 'admin/remix/upl...', 'assets/uploads/...', Array)
+#5 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): RemixController->actionUpload()
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#7 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#8 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#9 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('upload')
+#10 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/remix/upl...')
+#11 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#12 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#13 {main}
+REQUEST_URI=/remix/admin/remix/upload
+HTTP_REFERER=http://localhost/remix/admin/remix/create
+---
+2016/09/10 13:53:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/10 13:53:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/10 13:53:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/11 12:57:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/11 12:57:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/11 14:36:11 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\remix\protected\modules\admin\controllers\OriginalsongController.php:75)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(286): OriginalsongController->runAction()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(265): OriginalsongController->runActionWithFilters()
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): OriginalsongController->run()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/originalsong/upload
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\OriginalsongController.php (75)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/11 14:49:21 [error] [php] mkdir(): No such file or directory (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:60)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#4 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/genres/create
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (60)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/12 14:56:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/12 14:56:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/13 06:02:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/13 06:02:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/13 06:48:29 [error] [php] Missing argument 1 for CModel::getError(), called in C:\xampp\htdocs\remix\framework\base\CComponent.php on line 111 and defined (C:\xampp\htdocs\remix\framework\base\CModel.php:371)
+Stack trace:
+#0 C:\xampp\htdocs\remix\protected\components\UploadHandler.php(1421): RemixMedia->__get()
+#1 C:\xampp\htdocs\remix\protected\components\UploadHandler.php(189): UploadHandler->post()
+#2 C:\xampp\htdocs\remix\protected\components\UploadHandler.php(173): UploadHandler->initialize()
+#3 C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php(117): UploadHandler->__construct()
+#4 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): RemixController->actionUpload()
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#7 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#9 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\components\UploadHandler.php (1421)
+in C:\xampp\htdocs\remix\protected\components\UploadHandler.php (189)
+in C:\xampp\htdocs\remix\protected\components\UploadHandler.php (173)
+2016/09/13 07:58:16 [error] [php] mkdir(): No such file or directory (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:61)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#4 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/genres/create
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (61)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/13 08:00:16 [error] [exception.CException] exception 'CException' with message 'Genres and its behaviors do not have a method or closure named "getParent".' in C:\xampp\htdocs\remix\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\db\ar\CActiveRecord.php(227): CComponent->__call('getParent', Array)
+#1 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\view.php(35): CActiveRecord->__call('getParent', Array)
+#2 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\view.php(35): Genres->getParent(0)
+#3 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#4 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#7 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(29): CController->render('view', Array)
+#8 [internal function]: GenresController->actionView('b1455810-275e-2...')
+#9 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GenresController), Array)
+#10 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GenresController), Object(ReflectionMethod), Array)
+#11 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#12 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#13 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#14 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('view')
+#15 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/genres/vi...')
+#16 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#17 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#18 {main}
+REQUEST_URI=/remix/index.php/admin/genres/view?id=b1455810-275e-2cb3-1e2b-57d79548e3f5
+HTTP_REFERER=http://localhost/remix/admin/genres/create
+---
+2016/09/13 08:07:21 [error] [php] mkdir(): Invalid path (C:\xampp\htdocs\remix\protected\components\UploadHandler.php:1070)
+Stack trace:
+#0 C:\xampp\htdocs\remix\protected\components\UploadHandler.php(189): UploadHandler->post()
+#1 C:\xampp\htdocs\remix\protected\components\UploadHandler.php(173): UploadHandler->initialize()
+#2 C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php(117): UploadHandler->__construct()
+#3 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): RemixController->actionUpload()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#7 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\components\UploadHandler.php (1070)
+in C:\xampp\htdocs\remix\protected\components\UploadHandler.php (1345)
+in C:\xampp\htdocs\remix\protected\components\UploadHandler.php (189)
+2016/09/13 08:09:28 [error] [php] mkdir(): Invalid path (C:\xampp\htdocs\remix\protected\components\UploadHandler.php:1070)
+Stack trace:
+#0 C:\xampp\htdocs\remix\protected\components\UploadHandler.php(189): UploadHandler->post()
+#1 C:\xampp\htdocs\remix\protected\components\UploadHandler.php(173): UploadHandler->initialize()
+#2 C:\xampp\htdocs\remix\protected\modules\admin\controllers\RemixController.php(117): UploadHandler->__construct()
+#3 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): RemixController->actionUpload()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(286): RemixController->runAction()
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(265): RemixController->runActionWithFilters()
+#7 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): RemixController->run()
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/remix/upload
+in C:\xampp\htdocs\remix\protected\components\UploadHandler.php (1070)
+in C:\xampp\htdocs\remix\protected\components\UploadHandler.php (1345)
+in C:\xampp\htdocs\remix\protected\components\UploadHandler.php (189)
+2016/09/13 10:39:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/13 10:39:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/13 10:59:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\remix\protected\modules\admin\controllers\OriginalsongController.php:179
+Stack trace:
+#0 C:\xampp\htdocs\remix\protected\modules\admin\controllers\OriginalsongController.php(102): OriginalsongController->loadModel('1d193e18-35a3-7...')
+#1 [internal function]: OriginalsongController->actionUpdate('1d193e18-35a3-7...')
+#2 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(OriginalsongController), Array)
+#3 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(OriginalsongController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('update')
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/originals...')
+#9 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/remix/index.php/admin/originalsong/update?id=1d193e18-35a3-742f-df33-57d79e5c7c3b
+HTTP_REFERER=http://localhost/remix/index.php/admin/originalsong/manage
+---
+2016/09/13 10:59:51 [error] [php] Use of undefined constant disabled - assumed 'disabled' (C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#1 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\update.php(19): GenresController->renderPartial()
+#2 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): GenresController->renderInternal()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(782): GenresController->renderPartial()
+#6 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(99): GenresController->render()
+#7 unknown(0): GenresController->actionUpdate()
+#8 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#9 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#10 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#11 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#12 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#13 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#14 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#15 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/update?id=55bb7127-ae8f-5c71-e923-57d79b165383
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php (13)
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\update.php (19)
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (99)
+2016/09/13 13:13:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/13 13:13:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/13 13:13:31 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 06:51:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 06:51:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 06:56:17 [error] [system.db.CDbCommand] CDbCommand::execute() failed: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subgenre' in 'where clause'. The SQL statement executed was: DELETE FROM `remix_media` WHERE subgenre = '55bb7127-ae8f-5c71-e923-57d79b165383'.
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (164)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 06:56:17 [error] [exception.CDbException] exception 'CDbException' with message 'CDbCommand failed to execute the SQL statement: SQLSTATE[42S22]: Column not found: 1054 Unknown column 'subgenre' in 'where clause'. The SQL statement executed was: DELETE FROM `remix_media` WHERE subgenre = '55bb7127-ae8f-5c71-e923-57d79b165383'' in C:\xampp\htdocs\remix\framework\db\CDbCommand.php:358
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\db\ar\CActiveRecord.php(1823): CDbCommand->execute()
+#1 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(164): CActiveRecord->deleteAll(Array)
+#2 [internal function]: GenresController->actionDelete('55bb7127-ae8f-5...')
+#3 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GenresController), Array)
+#4 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GenresController), Object(ReflectionMethod), Array)
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#7 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('delete')
+#9 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/genres/de...')
+#10 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#12 {main}
+REQUEST_URI=/remix/index.php/admin/genres/delete?id=55bb7127-ae8f-5c71-e923-57d79b165383
+HTTP_REFERER=http://localhost/remix/index.php/admin/genres/manage
+---
+2016/09/14 07:05:28 [error] [php] unlink(./assets/uploads/remix/hip-hop/megamix): Permission denied (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:169)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#5 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#6 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/delete?id=55bb7127-ae8f-5c71-e923-57d79b165383
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (169)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 07:05:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "school".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('school')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/school
+HTTP_REFERER=http://localhost/remix/index.php/admin/genres/delete?id=55bb7127-ae8f-5c71-e923-57d79b165383
+---
+2016/09/14 07:05:52 [error] [php] unlink(./assets/uploads/remix/hip-hop/megamix): Permission denied (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:169)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#5 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#6 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/delete?id=55bb7127-ae8f-5c71-e923-57d79b165383
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (169)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 07:05:57 [error] [php] unlink(./assets/uploads/remix/hip-hop/megamix): Permission denied (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:169)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#5 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#6 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/delete?id=55bb7127-ae8f-5c71-e923-57d79b165383
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (169)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 07:15:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "test".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('test')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('test')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/remix/tes...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/admin/remix/test
+---
+2016/09/14 07:16:03 [error] [php] unlink(./assets/uploads/priyranjan): Permission denied (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:256)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#4 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/genres/test
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (256)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 07:22:49 [error] [php] unlink(./assets/uploads/remix/hip-hop/megamix): Permission denied (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:169)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#5 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#6 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/delete?id=55bb7127-ae8f-5c71-e923-57d79b165383
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (169)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 07:24:31 [error] [php] unlink(./assets/uploads/remix/hip-hop/megamix): Permission denied (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:169)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#5 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#6 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/delete?id=55bb7127-ae8f-5c71-e923-57d79b165383
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (169)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 07:24:58 [error] [php] unlink(./assets/uploads/priyranjan): Permission denied (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:256)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#4 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/test
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (256)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 07:26:43 [error] [php] unlink(./assets/uploads/priyranjan): Permission denied (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:257)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#4 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/test
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (257)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 07:27:37 [error] [php] unlink(./assets/uploads/priyranjan): Permission denied (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:257)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#4 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/test
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (257)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 07:29:17 [error] [php] rmdir(./assets/uploads/remix/hip-hop/megamix): Directory not empty (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:169)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#5 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#6 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/delete?id=55bb7127-ae8f-5c71-e923-57d79b165383
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (169)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 07:29:34 [error] [php] rmdir(./assets/uploads/remix/hip-hop/megamix): Directory not empty (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:169)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#5 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#6 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/delete?id=55bb7127-ae8f-5c71-e923-57d79b165383
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (169)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 08:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 08:08:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 08:29:31 [error] [php] unlink(./assets/uploads/remix/pop/megamix): Permission denied (C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:146)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#1 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#5 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#6 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/genres/delete?id=209ed359-ee3c-ad06-5506-57d8ebd0d312
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (146)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 08:36:05 [error] [php] Cannot modify header information - headers already sent by (output started at C:\xampp\htdocs\remix\protected\components\helpers.php:242) (C:\xampp\htdocs\remix\framework\web\CHttpRequest.php:889)
+Stack trace:
+#0 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(71): GenresController->redirect()
+#1 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): GenresController->actionCreate()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#3 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#5 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#6 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#7 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/genres/create
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (71)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/14 08:48:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 08:48:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 13:06:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 13:06:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 13:06:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 14:26:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 14:26:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 16:52:34 [error] [exception.CException] exception 'CException' with message 'Alias "application.admin.models.Coupon" is invalid. Make sure it points to an existing PHP file and the file is readable.' in C:\xampp\htdocs\remix\framework\YiiBase.php:323
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\gii\generators\crud\CrudCode.php(59): YiiBase::import('application.adm...', true)
+#1 C:\xampp\htdocs\remix\framework\validators\CInlineValidator.php(42): CrudCode->validateModel('model', Array)
+#2 C:\xampp\htdocs\remix\framework\validators\CValidator.php(201): CInlineValidator->validateAttribute(Object(CrudCode), 'model')
+#3 C:\xampp\htdocs\remix\framework\base\CModel.php(159): CValidator->validate(Object(CrudCode), NULL)
+#4 C:\xampp\htdocs\remix\framework\gii\CCodeGenerator.php(159): CModel->validate()
+#5 C:\xampp\htdocs\remix\framework\gii\CCodeGenerator.php(63): CCodeGenerator->prepare()
+#6 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): CCodeGenerator->actionIndex()
+#7 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#8 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#9 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#10 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('index')
+#11 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('gii/crud/index')
+#12 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#14 {main}
+REQUEST_URI=/remix/index.php/gii/crud/index
+HTTP_REFERER=http://localhost/remix/index.php/gii/crud/index
+---
+2016/09/14 16:54:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 16:54:40 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/14 16:55:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "default".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('default')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('default')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('site/default/lo...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/index.php/site/login
+---
+2016/09/14 16:55:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "default".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('default')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('default')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('site/default/lo...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/index.php/site/login
+---
+2016/09/14 17:18:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "admin/coupons".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/coupons')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/admin/coupons
+HTTP_REFERER=http://localhost/remix/index.php/admin/coupon/admin
+---
+2016/09/15 06:56:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/15 06:56:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/15 06:56:18 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/15 07:42:53 [error] [php] Undefined variable: parent (C:\xampp\htdocs\remix\protected\modules\admin\views\coupon\create.php:19)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(869): CouponController->renderFile()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(782): CouponController->renderPartial()
+#2 C:\xampp\htdocs\remix\protected\modules\admin\controllers\CouponController.php(56): CouponController->render()
+#3 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): CouponController->actionCreate()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(286): CouponController->runAction()
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(265): CouponController->runActionWithFilters()
+#7 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CouponController->run()
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/coupon/create
+in C:\xampp\htdocs\remix\protected\modules\admin\views\coupon\create.php (19)
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\CouponController.php (56)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/15 08:25:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/css/images/ui-icons_444444_256x240.png".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/css/images/ui-icons_444444_256x240.png
+HTTP_REFERER=http://localhost/remix/assets/css/jquery_ui.css
+---
+2016/09/15 08:27:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/css/images/ui-icons_555555_256x240.png".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/css/images/ui-icons_555555_256x240.png
+HTTP_REFERER=http://localhost/remix/assets/css/jquery_ui.css
+---
+2016/09/15 09:52:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:238
+Stack trace:
+#0 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(84): GenresController->loadModel('76785114-b2fb-c...')
+#1 [internal function]: GenresController->actionUpdate('76785114-b2fb-c...')
+#2 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GenresController), Array)
+#3 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GenresController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('update')
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/genres/up...')
+#9 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/remix/index.php/admin/genres/update?id=76785114-b2fb-cb86-e4b0-57da52c6b89b
+HTTP_REFERER=http://localhost/remix/index.php/admin/coupon/manage
+---
+2016/09/15 10:04:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php:238
+Stack trace:
+#0 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(28): GenresController->loadModel('76785114-b2fb-c...')
+#1 [internal function]: GenresController->actionView('76785114-b2fb-c...')
+#2 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(GenresController), Array)
+#3 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(GenresController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/genres/vi...')
+#9 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/remix/index.php/admin/genres/view?id=76785114-b2fb-cb86-e4b0-57da52c6b89b
+HTTP_REFERER=http://localhost/remix/index.php/admin/coupon/manage
+---
+2016/09/15 10:05:12 [error] [exception.CException] exception 'CException' with message 'Property "Coupon.name" is not defined.' in C:\xampp\htdocs\remix\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\db\ar\CActiveRecord.php(145): CComponent->__get('name')
+#1 C:\xampp\htdocs\remix\protected\modules\admin\views\coupon\view.php(17): CActiveRecord->__get('name')
+#2 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(782): CController->renderPartial('view', Array, true)
+#6 C:\xampp\htdocs\remix\protected\modules\admin\controllers\CouponController.php(33): CController->render('view', Array)
+#7 [internal function]: CouponController->actionView('76785114-b2fb-c...')
+#8 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CouponController), Array)
+#9 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CouponController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('view')
+#14 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/coupon/vi...')
+#15 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/remix/index.php/admin/coupon/view?id=76785114-b2fb-cb86-e4b0-57da52c6b89b
+HTTP_REFERER=http://localhost/remix/index.php/admin/coupon/manage
+---
+2016/09/15 18:31:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/15 18:31:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/15 18:31:27 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/15 18:31:39 [error] [exception.CException] exception 'CException' with message 'Property "Coupon.name" is not defined.' in C:\xampp\htdocs\remix\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\db\ar\CActiveRecord.php(145): CComponent->__get('name')
+#1 C:\xampp\htdocs\remix\protected\modules\admin\views\coupon\update.php(17): CActiveRecord->__get('name')
+#2 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require('C:\xampp\htdocs...')
+#3 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\xampp\htdocs...', Array, true)
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(869): CBaseController->renderFile('C:\xampp\htdocs...', Array, true)
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(782): CController->renderPartial('update', Array, true)
+#6 C:\xampp\htdocs\remix\protected\modules\admin\controllers\CouponController.php(80): CController->render('update', Array)
+#7 [internal function]: CouponController->actionUpdate('76785114-b2fb-c...')
+#8 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(CouponController), Array)
+#9 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(CouponController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('update')
+#14 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/coupon/up...')
+#15 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/remix/index.php/admin/coupon/update?id=76785114-b2fb-cb86-e4b0-57da52c6b89b
+HTTP_REFERER=http://localhost/remix/index.php/admin/coupon/manage
+---
+2016/09/16 18:02:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/16 18:02:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/16 18:02:37 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/17 05:20:01 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/17 05:20:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/17 07:28:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/17 07:28:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/17 07:28:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---

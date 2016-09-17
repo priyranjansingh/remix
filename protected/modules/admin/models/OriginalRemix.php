@@ -14,7 +14,7 @@
  * @property string $date_entered
  * @property string $date_modified
  */
-class OriginalRemix extends BaseModel
+class OriginalRemix extends AdminBaseModel
 {
 	/**
 	 * @return string the associated database table name

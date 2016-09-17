@@ -3,12 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/remix/assets/jquery_file_uploader/js/main.js</file>
-            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/views/remix/_form.php</file>
-            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/models/OriginalRemix.php</file>
-            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/models/RemixMedia.php</file>
-            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/controllers/RemixController.php</file>
-            <file>file:/C:/xampp/htdocs/remix/protected/components/UploadHandler.php</file>
+            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/views/coupon/update.php</file>
         </group>
     </open-files>
 </project-private>

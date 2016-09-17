@@ -5,9 +5,20 @@
  *
  * The followings are the available columns in table 'remix_media':
  * @property string $id
+ * @property string $song_name
+ * @property string $artist_name
+ * @property string $album_art
+ * @property string $slug
+ * @property string $initial_key
+ * @property string $bpm
  * @property string $file_name
  * @property string $file_type
  * @property double $file_size
+ * @property integer $type
+ * @property string $genre
+ * @property string $sub_genre
+ * @property string $version
+ * @property string $member_type
  * @property string $binary_data
  * @property integer $status
  * @property integer $deleted
@@ -16,7 +27,7 @@
  * @property string $date_entered
  * @property string $date_modified
  */
-class RemixMedia extends BaseModel
+class RemixMedia extends AdminBaseModel
 {
 	/**
 	 * @return string the associated database table name
@@ -34,15 +45,17 @@ class RemixMedia extends BaseModel
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, file_name, file_type, file_size, binary_data, created_by, modified_by, date_entered, date_modified', 'required'),
-			array('status, deleted', 'numerical', 'integerOnly'=>true),
+			array('id, file_name, file_type, file_size, type, genre, version, binary_data, created_by, modified_by, date_entered, date_modified', 'required'),
+			array('type, status, deleted', 'numerical', 'integerOnly'=>true),
 			array('file_size', 'numerical'),
-			array('id, created_by, modified_by', 'length', 'max'=>36),
-			array('file_name', 'length', 'max'=>256),
+			array('id, genre, sub_genre, version, created_by, modified_by', 'length', 'max'=>36),
+			array('song_name, artist_name, slug, initial_key, bpm, file_name', 'length', 'max'=>256),
 			array('file_type', 'length', 'max'=>100),
+			array('member_type', 'length', 'max'=>3),
+			array('album_art', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, file_name, file_type, file_size, binary_data, status, deleted, created_by, modified_by, date_entered, date_modified', 'safe', 'on'=>'search'),
+			array('id, song_name, artist_name, album_art, slug, initial_key, bpm, file_name, file_type, file_size, type, genre, sub_genre, version, member_type, binary_data, status, deleted, created_by, modified_by, date_entered, date_modified', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -64,9 +77,20 @@ class RemixMedia extends BaseModel
 	{
 		return array(
 			'id' => 'ID',
+			'song_name' => 'Song Name',
+			'artist_name' => 'Artist Name',
+			'album_art' => 'Album Art',
+			'slug' => 'Slug',
+			'initial_key' => 'Initial Key',
+			'bpm' => 'Bpm',
 			'file_name' => 'File Name',
 			'file_type' => 'File Type',
 			'file_size' => 'File Size',
+			'type' => 'Type',
+			'genre' => 'Genre',
+			'sub_genre' => 'Sub Genre',
+			'version' => 'Version',
+			'member_type' => 'Member Type',
 			'binary_data' => 'Binary Data',
 			'status' => 'Status',
 			'deleted' => 'Deleted',
@@ -96,9 +120,20 @@ class RemixMedia extends BaseModel
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id,true);
+		$criteria->compare('song_name',$this->song_name,true);
+		$criteria->compare('artist_name',$this->artist_name,true);
+		$criteria->compare('album_art',$this->album_art,true);
+		$criteria->compare('slug',$this->slug,true);
+		$criteria->compare('initial_key',$this->initial_key,true);
+		$criteria->compare('bpm',$this->bpm,true);
 		$criteria->compare('file_name',$this->file_name,true);
 		$criteria->compare('file_type',$this->file_type,true);
 		$criteria->compare('file_size',$this->file_size);
+		$criteria->compare('type',$this->type);
+		$criteria->compare('genre',$this->genre,true);
+		$criteria->compare('sub_genre',$this->sub_genre,true);
+		$criteria->compare('version',$this->version,true);
+		$criteria->compare('member_type',$this->member_type,true);
 		$criteria->compare('binary_data',$this->binary_data,true);
 		$criteria->compare('status',$this->status);
 		$criteria->compare('deleted',$this->deleted);

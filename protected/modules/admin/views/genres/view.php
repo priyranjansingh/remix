@@ -3,10 +3,10 @@
         Genres
     </h1>
     <ol class="breadcrumb">
-	    <li><a href="<?php echo base_url() . '/admin/dashboard'; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-	    <li><a href="<?php echo base_url() . '/admin/genres'; ?>"><i class="fa fa-dashboard"></i> Genres</a></li>
-	    <li class="active">View</li>
-	</ol>
+        <li><a href="<?php echo base_url() . '/admin/dashboard'; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="<?php echo base_url() . '/admin/genres'; ?>"><i class="fa fa-dashboard"></i> Genres</a></li>
+        <li class="active">View</li>
+    </ol>
 </section>
 <section class="content">
     <div class="row">
@@ -29,6 +29,11 @@
                             'data' => $model,
                             'attributes' => array(
                                 'name',
+                                array(
+                                    'type' => 'raw',
+                                    'name' => 'parent',
+                                    'value' => $model->getParent(!empty($model->parent_id)?$model->parent_id:0 )
+                                ),
                             ),
                         ));
                         ?>

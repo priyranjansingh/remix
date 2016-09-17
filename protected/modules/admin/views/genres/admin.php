@@ -20,7 +20,7 @@
                 <?php
                 Yii::app()->clientScript->registerScript('search', "
 						$('form.search-form').submit(function(){
-							$('#users-grid').yiiGridView('update', {
+							$('#genres-grid').yiiGridView('update', {
 								data: $(this).serialize()
 							});
 							return false;
@@ -57,29 +57,37 @@
                                     'enablePagination' => true,
                                     // 'filter'=>$model,
                                     'columns' => array(
-                                        'name',
                                         array(
-                                            'class'=>'CButtonColumn',
-                                            'template'=>'{v} {u} {d}', // <-- TEMPLATE WITH THE TWO STATES
-                                            'htmlOptions'=>array(
-                                                    'width'=>80,
+                                            'name' => 'Genre',
+                                            'value' => '$data->name',
+                                        ),
+                                        array(
+                                            'name' => 'Parent',
+                                            //call the method 'getParent' from the controller
+                                            'value' => array($this, 'getParent'),
+                                        ),
+                                        array(
+                                            'class' => 'CButtonColumn',
+                                            'template' => '{v} {u} {d}', // <-- TEMPLATE WITH THE TWO STATES
+                                            'htmlOptions' => array(
+                                                'width' => 80,
                                             ),
                                             'buttons' => array(
-                                                'v'=>array(
-                                                        'label'=>'<i class="fa fa-search"></i>',
-                                                        'url'=>'Yii::app()->createUrl("admin/genres/view", array("id"=>$data->id))',
-                                                        'options'=>array('class'=>'view','title'=>'View'),
+                                                'v' => array(
+                                                    'label' => '<i class="fa fa-search"></i>',
+                                                    'url' => 'Yii::app()->createUrl("admin/genres/view", array("id"=>$data->id))',
+                                                    'options' => array('class' => 'view', 'title' => 'View'),
                                                 ),
-                                                'u'=>array(
-                                                        'label'=>'<i class="fa fa-edit"></i>',
-                                                        'url'=>'Yii::app()->createUrl("admin/genres/update", array("id"=>$data->id))',
-                                                        'options'=>array('class'=>'edit','title'=>'Update'),
+                                                'u' => array(
+                                                    'label' => '<i class="fa fa-edit"></i>',
+                                                    'url' => 'Yii::app()->createUrl("admin/genres/update", array("id"=>$data->id))',
+                                                    'options' => array('class' => 'edit', 'title' => 'Update'),
                                                 ),
-                                                'd'=>array(
-                                                        'label'=>'<i class="fa fa-trash"></i>',
-                                                        'url'=>'Yii::app()->createUrl("admin/genres/delete", array("id"=>$data->id))',
-                                                        'options'=>array('class'=>'delete','title'=>'Delete'),
-                                                        'click'=>'function(){return confirm("are you sure ?");}'
+                                                'd' => array(
+                                                    'label' => '<i class="fa fa-trash"></i>',
+                                                    'url' => 'Yii::app()->createUrl("admin/genres/delete", array("id"=>$data->id))',
+                                                    'options' => array('class' => 'delete', 'title' => 'Delete'),
+                                                    'click' => 'function(){return confirm("are you sure ? Deleting this genre will delete all original and remix song under this genre");}'
                                                 ),
                                             ),
                                         )

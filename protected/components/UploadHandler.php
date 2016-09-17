@@ -1365,6 +1365,9 @@ class UploadHandler
         {    
         
             Yii::import("application.modules.admin.models.OriginalMedia", true);
+            $genre = $this->data['genre'];
+            $sub_genre = $this->data['sub_genre'];
+            $version = $this->data['version'];
            foreach($files as $file)
            {
                $m_type = 2; // for video
@@ -1376,6 +1379,10 @@ class UploadHandler
                $model->file_name = $file->name;
                $model->file_type = $file->type;
                $model->file_size = $file->size;
+               $model->type = $m_type;
+               $model->genre = $genre;
+               $model->sub_genre = $sub_genre;
+               $model->version = $version;
                $model->binary_data = "123456";
                $model->validate();
                $model->save();
@@ -1386,6 +1393,10 @@ class UploadHandler
             Yii::import("application.modules.admin.models.RemixMedia", true);
             Yii::import("application.modules.admin.models.OriginalRemix", true);
             $parent_songs_strings = $this->data['parent_songs'];
+            $genre = $this->data['genre'];
+            $sub_genre = $this->data['sub_genre'];
+            $version = $this->data['version'];
+            $member_type = $this->data['member_type'];
             $parent_songs_arr = explode(',',$parent_songs_strings);
             //pre($parent_songs_arr,true);
             
@@ -1400,8 +1411,14 @@ class UploadHandler
                 $model->file_name = $file->name;
                 $model->file_type = $file->type;
                 $model->file_size = $file->size;
+                $model->type = $m_type;
+                $model->genre = $genre;
+                $model->sub_genre = $sub_genre;
+                $model->version = $version;
+                $model->member_type = $member_type;
                 $model->binary_data = "123456";
                 $model->validate();
+                //pre($model->errors,true);
                 $model->save();
                 
                 // for entry in the original_remix table

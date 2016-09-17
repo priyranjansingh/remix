@@ -35,9 +35,27 @@ class RemixController extends Controller {
      */
     public function actionCreate() {
         $model = new Plans;
+        $genre_arr = array();
+        $version_arr = array();
+
+        $genre_list = Genres::model()->findAll(array("condition"=> "parent_id = 0"));
+        if (!empty($genre_list)) {
+            foreach ($genre_list as $genre) {
+                $genre_arr[$genre->id] = $genre->name;
+            }
+        }
+
+        $version_list = Version::model()->findAll();
+        if (!empty($version_list)) {
+            foreach ($version_list as $version) {
+                $version_arr[$version->id] = $version->name;
+            }
+        }
+
+
 
         $this->render('create', array(
-            'model' => $model,
+            'model' => $model, 'version_arr' => $version_arr, 'genre_arr' => $genre_arr
         ));
     }
 
@@ -63,14 +81,39 @@ class RemixController extends Controller {
     }
 
     public function actionUpload() {
+        $parent_songs = "";
+        $genre = "";
+        $sub_genre = "";
+        $version = "";
+        $member_type = "";
+        $genre_name = "";
         if (isset($_REQUEST['parent_songs'])) {
             $parent_songs = $_REQUEST['parent_songs'];
+            $genre = $_REQUEST['genre'];
+            $sub_genre = $_REQUEST['sub_genre'];
+            $version = $_REQUEST['version'];
+            $member_type = $_REQUEST['member_type'];
+            $genre_detail = Genres::model()->findByPk($genre);
+            if(!empty($sub_genre))
+            {
+                $sub_genre_detail = Genres::model()->findByPk($sub_genre);
+                $folder_name = $genre_detail->folder_name . "/".$sub_genre_detail->folder_name."/";
+            }
+            else
+            {    
+                $folder_name = $genre_detail->folder_name . "/";
+            }
         }
         $script_url = "admin/remix/upload/";
-        $upload_dir = "assets/uploads/remix/";
+        $upload_dir = "assets/uploads/remix/" . $folder_name;
+
         $data = array();
         $data['scenario'] = 'remix';
         $data['parent_songs'] = $parent_songs;
+        $data['genre'] = $genre;
+        $data['sub_genre'] = $sub_genre;
+        $data['version'] = $version;
+        $data['member_type'] = $member_type;
         $upload_handler = new UploadHandler(null, true, null, $script_url, $upload_dir, $data); // this has been defined in the components
     }
 
@@ -171,5 +214,24 @@ class RemixController extends Controller {
             Yii::app()->end();
         }
     }
+
+    public function actionGetSubgenre() {
+        $genre_id = $_POST['genre_id'];
+        $subgenre = Genres::model()->findAll(array("condition" => "parent_id = '$genre_id'"));
+        ?>
+        <option value="">Select Subgenre</option>
+        <?php 
+        if (!empty($subgenre)) {
+            foreach ($subgenre as $val) {
+                ?>    
+                <option value="<?php echo $val->id; ?>"><?php echo $val->name; ?></option>
+                <?php
+            }
+        }
+    }
+    
+    
+         
+    
 
 }

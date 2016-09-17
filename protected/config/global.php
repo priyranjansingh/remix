@@ -53,6 +53,7 @@ $global = array(
     'paypal_business_email' => 'singh.priyranjan-facilitator@gmail.com',
     'paypal_notify_url' => 'http://www.dealrush.in/jdrive/home/notify',
     'paypal_cancel_url' => 'http://www.dealrush.in/jdrive/home/cancel',
-    'paypal_return_url' => 'http://www.dealrush.in/jdrive/home/thank'
+    'paypal_return_url' => 'http://www.dealrush.in/jdrive/home/thank',
+    'discount_type' => array('percent' => 'Percent','number' => 'Number'),
 );
 ?>

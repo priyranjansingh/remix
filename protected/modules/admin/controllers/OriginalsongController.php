@@ -35,17 +35,61 @@ class OriginalsongController extends Controller {
      */
     public function actionCreate() {
         $model = new Plans;
+        $genre_arr = array();
+        $version_arr = array();
+
+        $genre_list = Genres::model()->findAll(array("condition"=> "parent_id = 0"));
+        if (!empty($genre_list)) {
+            foreach ($genre_list as $genre) {
+                $genre_arr[$genre->id] = $genre->name;
+            }
+        }
+
+        $version_list = Version::model()->findAll();
+        if (!empty($version_list)) {
+            foreach ($version_list as $version) {
+                $version_arr[$version->id] = $version->name;
+            }
+        }
+
 
         $this->render('create', array(
-            'model' => $model,
+            'model' => $model,'version_arr' => $version_arr, 'genre_arr' => $genre_arr
         ));
     }
 
     public function actionUpload() {
+        $genre = "";
+        $sub_genre = "";
+        $version = "";
+        $genre_name = "";
+        
+         if (isset($_REQUEST['genre'])) {
+            $genre = $_REQUEST['genre'];
+            $sub_genre = $_REQUEST['sub_genre'];
+            $version = $_REQUEST['version'];
+            $genre_detail = Genres::model()->findByPk($genre);
+            if(!empty($sub_genre))
+            {
+                $sub_genre_detail = Genres::model()->findByPk($sub_genre);
+                $folder_name = $genre_detail->folder_name . "/".$sub_genre_detail->folder_name."/";
+            }
+            else
+            {    
+                $folder_name = $genre_detail->folder_name . "/";
+            }
+        }
+        
+        
         $script_url = "admin/originalsong/upload/";
-        $upload_dir = "assets/uploads/original/";
+        $upload_dir = "assets/uploads/original/" . $folder_name;
+        
         $data = array();
         $data['scenario'] = 'original';
+        $data['genre'] = $genre;
+        $data['sub_genre'] = $sub_genre;
+        $data['version'] = $version;
+        
         $upload_handler = new UploadHandler(null,true,null,$script_url,$upload_dir,$data);
     }
 
@@ -144,6 +188,21 @@ class OriginalsongController extends Controller {
         if (isset($_POST['ajax']) && $_POST['ajax'] === 'plan-form') {
             echo CActiveForm::validate($model);
             Yii::app()->end();
+        }
+    }
+    
+    public function actionGetSubgenre() {
+        $genre_id = $_POST['genre_id'];
+        $subgenre = Genres::model()->findAll(array("condition" => "parent_id = '$genre_id'"));
+        ?>
+        <option value="">Select Subgenre</option>
+        <?php 
+        if (!empty($subgenre)) {
+            foreach ($subgenre as $val) {
+                ?>    
+                <option value="<?php echo $val->id; ?>"><?php echo $val->name; ?></option>
+                <?php
+            }
         }
     }
 

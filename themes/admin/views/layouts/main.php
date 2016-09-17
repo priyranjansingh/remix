@@ -45,9 +45,9 @@
                 <!-- Logo -->
                 <a href="<?php echo base_url() . '/admin'; ?>" class="logo">
                     <!-- mini logo for sidebar mini 50x50 pixels -->
-                    <span class="logo-mini"><b>SM</b></span>
+                    <span class="logo-mini"><b>XM</b></span>
                     <!-- logo for regular state and mobile devices -->
-                    <span class="logo-lg"><b>Remix Management</b></span>
+                    <span class="logo-lg"><b>X Management</b></span>
                 </a>
                 <!-- Header Navbar: style can be found in header.less -->
                 <nav class="navbar navbar-static-top" role="navigation">
@@ -104,7 +104,9 @@
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <ul class="sidebar-menu">
                         <li class="header">MAIN NAVIGATION</li>
-                        <li><a href="<?php echo base_url() . "/admin/genres"; ?>"><i class="fa fa-users"></i> <span>Genres</span></a></li>
+                        <li><a href="<?php echo base_url() . "/admin/genres"; ?>"><i class="fa fa-tag"></i> <span>Genres</span></a></li>
+                        <li><a href="<?php echo base_url() . "/admin/version"; ?>"><i class="fa fa-tasks"></i> <span>Version</span></a></li>
+                        <li><a href="<?php echo base_url() . "/admin/coupon"; ?>"><i class="fa fa-barcode"></i> <span>Coupons</span></a></li>
             <!--            <li><a href="<?php echo base_url() . "/admin/songs"; ?>"><i class="fa fa-users"></i> <span>Songs</span></a></li>
                         <li><a href="<?php echo base_url() . "/admin/videos"; ?>"><i class="fa fa-users"></i> <span>Videos</span></a></li>-->
                         <li><a href="<?php echo base_url() . "/admin/frontusers"; ?>"><i class="fa fa-users"></i> <span>Front Users</span></a></li>
@@ -125,6 +127,37 @@
                 <!-- Main content -->
                 <?php echo $content; ?> 
                 <!-- /.content -->
+                <div class="sticky_player" data-sticky="true" style="position: fixed; bottom: 0px;">
+                    <div class="play_list"></div>
+                    <div class="container player_wrapper">
+                      <div class="row">
+                        <div id="player-instance" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_0" preload="metadata"></audio></div>
+                        <div class="jp-title audio-title"></div>
+                        <div class="rock_controls controls">
+                          <div class="fa fa-play jp-play" style="display: block;"></div>
+                          <div class="fa fa-pause jp-pause" style="display: none;"></div>
+                        </div>
+                        <!--controls-->
+                        <div class="audio-progress">
+                          <div class="jp-seek-bar" style="width: 0%;">
+                            <div class="audio-play-bar jp-play-bar" style="width: 0%;"></div>
+                          </div>
+                          <!--jp-seek-bar--> 
+                        </div>
+                        <!--audio-progress-->
+                        <div class="audio-timer"> <span class="jp-current-time">00:00</span> </div>
+                        <div class="jp-volume">
+                          <ul>
+                            <li class="active"><a href="#"></a></li>
+                            <li class="active"><a href="#"></a></li>
+                            <li class="active"><a href="#"></a></li>
+                            <li class="active"><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                          </ul>
+                        </div>
+                        <a href="#" class="playlist_expander fa fa-bars"></a> </div>
+                    </div>
+                  </div>
             </div>
             <!-- /.content-wrapper -->
             <footer class="main-footer">
@@ -163,5 +196,6 @@
         <script src="<?php echo $baseUrl; ?>/dist/js/pages/dashboard.js"></script>
         <!-- AdminLTE for demo purposes -->
         <script src="<?php echo $baseUrl; ?>/dist/js/demo.js"></script>
+         <span class="loading"></span>
     </body>
 </html>
