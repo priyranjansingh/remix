@@ -37,6 +37,14 @@
             var base_url = "<?php echo base_url(); ?>";
         </script>   
         
+        
+        <script src="<?php echo base_url(); ?>/assets/js/jplayer/js/jquery.jplayer.min.js"></script>
+        <script src="<?php echo base_url(); ?>/assets/js/jplayer/js/audio.js"></script>
+        <script src="<?php echo base_url(); ?>/assets/js/common.js"></script>
+        
+
+            
+        
     </head>
     <body class="hold-transition skin-blue sidebar-mini">
         <div class="wrapper">
@@ -112,8 +120,8 @@
                         <li><a href="<?php echo base_url() . "/admin/frontusers"; ?>"><i class="fa fa-users"></i> <span>Front Users</span></a></li>
                         <li><a href="<?php echo base_url() . "/admin/adminusers"; ?>"><i class="fa fa-users"></i> <span>Admin Users</span></a></li>
                         <li><a href="<?php echo base_url() . "/admin/plans"; ?>"><i class="fa fa-users"></i> <span>Membership Plan</span></a></li>
-                       <li><a href="<?php echo base_url() . "/admin/remix"; ?>"><i class="fa fa-users"></i> <span>Remix Management</span></a></li>
-                       <li><a href="<?php echo base_url() . "/admin/originalsong"; ?>"><i class="fa fa-users"></i> <span>Original Song Management</span></a></li>
+                       <li><a href="<?php echo base_url() . "/admin/remix"; ?>"><i class="fa fa-music"></i> <span>Remix Management</span></a></li>
+                       <li><a href="<?php echo base_url() . "/admin/originalsong"; ?>"><i class="fa fa-music"></i> <span>Original Song Management</span></a></li>
                         <li>
                           <!--<a href="<?php echo base_url() . "/admin/transactions"; ?>"><i class="fa fa-university"></i> <span>Transactions</span></a>-->
                         </li>
@@ -127,6 +135,8 @@
                 <!-- Main content -->
                 <?php echo $content; ?> 
                 <!-- /.content -->
+               
+                
                 <div class="sticky_player" data-sticky="true" style="position: fixed; bottom: 0px;">
                     <div class="play_list"></div>
                     <div class="container player_wrapper">

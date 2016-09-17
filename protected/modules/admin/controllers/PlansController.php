@@ -102,13 +102,13 @@ class PlansController extends Controller
 				}
 				\Stripe\Stripe::setApiKey($secret_key);
 
-				$p = \Stripe\Plan::retrieve($stripe_plan);
-				$p->name = $model->plan_name;
-				$p->amount = ($model->plan_price * 100);
-				$p->interval = $model->plan_duration_type;
-				$p->interval_count = $model->plan_duration;
-				$p->trial_period_days = $free_duration;
-				$p->save();
+//				$p = \Stripe\Plan::retrieve($stripe_plan);
+//				$p->name = $model->plan_name;
+//				$p->amount = ($model->plan_price * 100);
+//				$p->interval = $model->plan_duration_type;
+//				$p->interval_count = $model->plan_duration;
+//				$p->trial_period_days = $free_duration;
+//				$p->save();
 				$this->redirect(array('view','id'=>$model->id));
 			}
 		}

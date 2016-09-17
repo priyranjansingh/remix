@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Aug 25, 2016 at 09:40 AM
+-- Generation Time: Sep 17, 2016 at 02:17 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -294,12 +294,66 @@ INSERT INTO `countries` (`id`, `sortname`, `name`, `status`, `deleted`, `created
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `coupon`
+--
+
+CREATE TABLE IF NOT EXISTS `coupon` (
+  `id` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `code` varchar(256) NOT NULL,
+  `discount_type` enum('percent','number') NOT NULL,
+  `discount` decimal(12,2) NOT NULL,
+  `begin_date` date NOT NULL,
+  `expiry_date` date NOT NULL,
+  `quantity` int(11) NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
+  `created_by` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `modified_by` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date_entered` datetime NOT NULL,
+  `date_modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `coupon`
+--
+
+INSERT INTO `coupon` (`id`, `code`, `discount_type`, `discount`, `begin_date`, `expiry_date`, `quantity`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
+('76785114-b2fb-cb86-e4b0-57da52c6b89b', 'kol300000', 'number', '10.00', '2016-09-15', '2016-09-20', 100, 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-15 09:50:03', '2016-09-17 07:28:38');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `feedback`
+--
+
+CREATE TABLE IF NOT EXISTS `feedback` (
+  `id` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `song_id` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `rating` int(11) NOT NULL,
+  `answer1` enum('Y','N') DEFAULT NULL,
+  `comment` text,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
+  `created_by` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `modified_by` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date_entered` datetime NOT NULL,
+  `date_modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `genres`
 --
 
 CREATE TABLE IF NOT EXISTS `genres` (
   `id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `parent_id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT '0',
   `name` varchar(128) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `folder_name` varchar(256) COLLATE utf8mb4_unicode_ci NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT '1',
   `deleted` tinyint(1) NOT NULL DEFAULT '0',
   `created_by` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
@@ -313,16 +367,9 @@ CREATE TABLE IF NOT EXISTS `genres` (
 -- Dumping data for table `genres`
 --
 
-INSERT INTO `genres` (`id`, `name`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
-('22c52c3c-e19f-7a57-dc87-5704360feee9', 'Original', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-04-06 00:04:56', '2016-07-21 04:50:37'),
-('28a16bb0-47f9-f7e1-d877-573ef5be19d0', 'Club', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-05-20 11:30:22', '2016-05-20 11:30:22'),
-('2ae9b705-431c-427e-3a32-57339ac5ea26', 'Hiphop/ Rap', 1, 0, 'e71ca27b-d9e6-538e-f106-572a476f04ee', 'e71ca27b-d9e6-538e-f106-572a476f04ee', '2016-05-11 22:48:06', '2016-05-11 22:48:06'),
-('436c1d53-f210-2220-ddb9-573efc69bfbf', 'English Pop', 1, 0, 'e71ca27b-d9e6-538e-f106-572a476f04ee', 'e71ca27b-d9e6-538e-f106-572a476f04ee', '2016-05-20 12:02:52', '2016-05-20 12:02:52'),
-('4996790b-d8fe-3fa3-8dc9-5704359b7417', 'Hip-Hop', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-04-06 00:01:19', '2016-04-06 00:01:19'),
-('4dc097a3-9735-309b-f49f-573e326b50a0', 'R&B', 1, 0, '6164cdf6-593c-089c-aafc-573a24b182af', '6164cdf6-593c-089c-aafc-573a24b182af', '2016-05-19 21:39:33', '2016-05-19 21:39:33'),
-('c517480b-61bc-8022-9af6-573e39bd8815', 'Transitions', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-05-19 22:08:43', '2016-05-19 22:08:43'),
-('dac7d342-9446-c4c1-34e7-5743600be4d8', 'Reggae', 1, 0, 'e71ca27b-d9e6-538e-f106-572a476f04ee', 'e71ca27b-d9e6-538e-f106-572a476f04ee', '2016-05-23 19:57:23', '2016-05-23 19:57:23'),
-('dfbf372b-2edf-ef5a-355a-57431b917ab2', 'Dance', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-05-23 15:00:44', '2016-05-23 15:00:44');
+INSERT INTO `genres` (`id`, `parent_id`, `name`, `folder_name`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
+('1e68b83e-9d7d-a7fb-9e90-57d8f240f05c', '0', 'pop', 'pop', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-14 08:47:35', '2016-09-14 08:47:35'),
+('b0f04d96-35b4-344e-737b-57d8f2aefa37', '0', 'Hip hop', 'hip-hop', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-14 08:49:08', '2016-09-14 08:49:08');
 
 -- --------------------------------------------------------
 
@@ -332,9 +379,19 @@ INSERT INTO `genres` (`id`, `name`, `status`, `deleted`, `created_by`, `modified
 
 CREATE TABLE IF NOT EXISTS `original_media` (
   `id` char(36) NOT NULL,
+  `song_name` varchar(256) DEFAULT NULL,
+  `artist_name` varchar(256) DEFAULT NULL,
+  `album_art` text,
+  `slug` varchar(256) DEFAULT NULL,
+  `initial_key` varchar(256) DEFAULT NULL,
+  `bpm` varchar(256) DEFAULT NULL,
   `file_name` varchar(256) NOT NULL,
   `file_type` varchar(100) NOT NULL,
   `file_size` float NOT NULL,
+  `type` tinyint(1) NOT NULL,
+  `genre` char(36) DEFAULT NULL,
+  `sub_genre` char(36) DEFAULT NULL,
+  `version` char(36) DEFAULT NULL,
   `binary_data` text NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT '1',
   `deleted` tinyint(1) NOT NULL DEFAULT '0',
@@ -349,14 +406,8 @@ CREATE TABLE IF NOT EXISTS `original_media` (
 -- Dumping data for table `original_media`
 --
 
-INSERT INTO `original_media` (`id`, `file_name`, `file_type`, `file_size`, `binary_data`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
-('7b5ae60b-4441-8307-adba-579cccb2563d', 'Lighthouse.jpg', 'image/jpeg', 561276, '123456', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-07-30 17:47:47', '2016-07-30 17:47:47'),
-('960cfda2-f77b-f29d-c95e-579cc01d4a37', 'Koala.jpg', 'image/jpeg', 780831, '123456', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-07-30 17:00:14', '2016-07-30 17:00:14'),
-('b985a13e-5357-809c-ad41-579ccb323cc7', 'Desert.jpg', 'image/jpeg', 845941, '123456', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-07-30 17:45:38', '2016-07-30 17:45:38'),
-('bd08546a-6110-7c82-b5eb-579ccc0de0bd', 'Penguins.jpg', 'image/jpeg', 777835, '123456', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-07-30 17:47:47', '2016-07-30 17:47:47'),
-('da2c133c-0695-239a-dd4f-57a99232a575', 'Maid with the Flaxen Hair.mp3', 'audio/mp3', 4113870, '123456', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-08-09 10:19:31', '2016-08-09 10:19:31'),
-('e49aff80-0295-f647-8c35-579ccb8061cf', 'Jellyfish.jpg', 'image/jpeg', 775702, '123456', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-07-30 17:46:21', '2016-07-30 17:46:21'),
-('ead43f4c-5a91-7ca3-ad93-579cc10dea93', 'Lighthouse.jpg', 'image/jpeg', 561276, '123456', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-07-30 17:00:30', '2016-07-30 17:00:30');
+INSERT INTO `original_media` (`id`, `song_name`, `artist_name`, `album_art`, `slug`, `initial_key`, `bpm`, `file_name`, `file_type`, `file_size`, `type`, `genre`, `sub_genre`, `version`, `binary_data`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
+('c685fe01-1e0d-1581-0627-57d8f226f99a', NULL, NULL, NULL, NULL, NULL, NULL, 'Kalimba.mp3', 'audio/mp3', 8414450, 1, 'b0f04d96-35b4-344e-737b-57d8f2aefa37', '', '765d2413-fc17-de31-dbb4-57ce84d1ab43', '123456', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-14 08:49:32', '2016-09-14 08:49:32');
 
 -- --------------------------------------------------------
 
@@ -376,6 +427,14 @@ CREATE TABLE IF NOT EXISTS `original_remix` (
   `date_modified` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `original_remix`
+--
+
+INSERT INTO `original_remix` (`id`, `original_song_id`, `remix_song_id`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
+('3c52f361-2484-a44e-8e7b-57dcda12ff57', 'c685fe01-1e0d-1581-0627-57d8f226f99a', '138ceb30-eabd-5ee5-3458-57dcdaff40a8', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-17 07:55:24', '2016-09-17 07:55:24'),
+('efc3873f-41c4-c9c3-39ac-57dcdad94759', 'c685fe01-1e0d-1581-0627-57d8f226f99a', 'e0a040ab-3748-4280-b3f2-57dcdab9f73d', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-17 07:55:23', '2016-09-17 07:55:23');
 
 -- --------------------------------------------------------
 
@@ -409,7 +468,7 @@ CREATE TABLE IF NOT EXISTS `plans` (
 --
 
 INSERT INTO `plans` (`id`, `plan_name`, `plan_desc`, `plan_price`, `plan_duration`, `plan_duration_type`, `free_duration`, `free_duration_type`, `plan_serial`, `plan_type`, `stripe_plan`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
-('49474655-8a55-de7c-5152-572a462edb6f', 'Monthly Plan', 'Monthly Plan Charged Every month', '30', 1, 'month', 0, '', 2, 'premium', '343c2044-7049-935b-be27-572a4602425f', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-05-04 20:58:40', '2016-05-04 20:58:40'),
+('49474655-8a55-de7c-5152-572a462edb6f', 'Monthly Plan', 'Monthly Plan Charged Every month', '30', 1, 'month', 0, '', 2, 'premium', '343c2044-7049-935b-be27-572a4602425f', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-05-04 20:58:40', '2016-09-17 07:50:41'),
 ('765234a7-8e1a-6f04-f802-572a47304a60', 'Yearly Plan', 'Yearly Plan Charged $220 in every 1 Year', '220', 1, 'year', 0, '', 3, 'pro', 'c0e293dd-0a94-4527-b92f-572a47bd7420', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-05-04 21:03:58', '2016-05-04 21:03:58'),
 ('804d6d36-d9b2-ee6f-35bf-574f2891587c', 'Free Membership', 'Free Membership', '0', 1, 'month', 365, 'day', 1, 'basic', '57b2f87d-fea8-00b2-38ba-574f284afcb9', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-06-01 18:23:49', '2016-06-01 18:23:49');
 
@@ -421,9 +480,20 @@ INSERT INTO `plans` (`id`, `plan_name`, `plan_desc`, `plan_price`, `plan_duratio
 
 CREATE TABLE IF NOT EXISTS `remix_media` (
   `id` char(36) NOT NULL,
+  `song_name` varchar(256) DEFAULT NULL,
+  `artist_name` varchar(256) DEFAULT NULL,
+  `album_art` text,
+  `slug` varchar(256) DEFAULT NULL,
+  `initial_key` varchar(256) DEFAULT NULL,
+  `bpm` varchar(256) DEFAULT NULL,
   `file_name` varchar(256) NOT NULL,
   `file_type` varchar(100) NOT NULL,
   `file_size` float NOT NULL,
+  `type` tinyint(1) NOT NULL,
+  `genre` char(36) NOT NULL,
+  `sub_genre` char(36) DEFAULT NULL,
+  `version` char(36) NOT NULL,
+  `member_type` enum('reg','vip') NOT NULL DEFAULT 'reg',
   `binary_data` text NOT NULL,
   `status` tinyint(1) NOT NULL DEFAULT '1',
   `deleted` tinyint(1) NOT NULL DEFAULT '0',
@@ -433,6 +503,14 @@ CREATE TABLE IF NOT EXISTS `remix_media` (
   `date_modified` datetime NOT NULL,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `remix_media`
+--
+
+INSERT INTO `remix_media` (`id`, `song_name`, `artist_name`, `album_art`, `slug`, `initial_key`, `bpm`, `file_name`, `file_type`, `file_size`, `type`, `genre`, `sub_genre`, `version`, `member_type`, `binary_data`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
+('138ceb30-eabd-5ee5-3458-57dcdaff40a8', NULL, NULL, NULL, NULL, NULL, NULL, 'Sleep Away.mp3', 'audio/mp3', 4842580, 1, '1e68b83e-9d7d-a7fb-9e90-57d8f240f05c', '', '765d2413-fc17-de31-dbb4-57ce84d1ab43', 'vip', '123456', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-17 07:55:24', '2016-09-17 07:55:24'),
+('e0a040ab-3748-4280-b3f2-57dcdab9f73d', NULL, NULL, NULL, NULL, NULL, NULL, 'Maid with the Flaxen Hair.mp3', 'audio/mp3', 4113870, 1, '1e68b83e-9d7d-a7fb-9e90-57d8f240f05c', '', '765d2413-fc17-de31-dbb4-57ce84d1ab43', 'vip', '123456', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-17 07:55:23', '2016-09-17 07:55:23');
 
 -- --------------------------------------------------------
 
@@ -4653,6 +4731,32 @@ CREATE TABLE IF NOT EXISTS `users` (
 
 INSERT INTO `users` (`id`, `username`, `password`, `password_reset_code`, `first_name`, `last_name`, `email`, `phone`, `is_paid`, `profile_pic`, `state_id`, `country_id`, `is_admin`, `role_id`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
 ('7e567f4c-fb69-11e5-91d7-3c07717072c4', 'admin', 'e10adc3949ba59abbe56e057f20f883e', NULL, 'Priyranjan', 'Singh', 'singh.priyranjan@gmail.com', NULL, 0, NULL, 1, 101, 1, '4eee73be-fb69-11e5-91d7-3c07717072c4', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-04-06 00:00:00', '2016-04-06 00:00:00');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `version`
+--
+
+CREATE TABLE IF NOT EXISTS `version` (
+  `id` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `name` varchar(256) NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
+  `created_by` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `modified_by` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date_entered` datetime NOT NULL,
+  `date_modified` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `version`
+--
+
+INSERT INTO `version` (`id`, `name`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
+('765d2413-fc17-de31-dbb4-57ce84d1ab43', 'Clean', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-06 10:56:31', '2016-09-17 07:38:29'),
+('916eaa3c-7f95-d67b-ea3e-57ce846e9840', 'Dirty', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-06 10:56:22', '2016-09-06 10:56:22');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;

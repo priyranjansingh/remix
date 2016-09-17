@@ -5051,3 +5051,159 @@ Stack trace:
 REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
 HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
 ---
+2016/09/17 07:43:07 [error] [exception.Stripe\Error\InvalidRequest] exception 'Stripe\Error\InvalidRequest' with message 'Received unknown parameters: amount, interval, interval_count, trial_period_days' in C:\xampp\htdocs\remix\assets\stripe\lib\ApiRequestor.php:103 from API request 'req_9D1eOcilzhaQ4v'
+Stack trace:
+#0 C:\xampp\htdocs\remix\assets\stripe\lib\ApiRequestor.php(222): Stripe\ApiRequestor->handleApiError('{?  "error": {?...', 400, Array, Array)
+#1 C:\xampp\htdocs\remix\assets\stripe\lib\ApiRequestor.php(60): Stripe\ApiRequestor->_interpretResponse('{?  "error": {?...', 400, Array)
+#2 C:\xampp\htdocs\remix\assets\stripe\lib\ApiResource.php(108): Stripe\ApiRequestor->request('post', '/v1/plans/343c2...', Array, Array)
+#3 C:\xampp\htdocs\remix\assets\stripe\lib\ApiResource.php(99): Stripe\ApiResource::_staticRequest('post', '/v1/plans/343c2...', Array, Object(Stripe\Util\RequestOptions))
+#4 C:\xampp\htdocs\remix\assets\stripe\lib\ApiResource.php(159): Stripe\ApiResource->_request('post', '/v1/plans/343c2...', Array, NULL)
+#5 C:\xampp\htdocs\remix\assets\stripe\lib\Plan.php(47): Stripe\ApiResource->_save(NULL)
+#6 C:\xampp\htdocs\remix\protected\modules\admin\controllers\PlansController.php(111): Stripe\Plan->save()
+#7 [internal function]: PlansController->actionUpdate('49474655-8a55-d...')
+#8 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PlansController), Array)
+#9 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PlansController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#13 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('update')
+#14 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/plans/upd...')
+#15 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#16 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#17 {main}
+REQUEST_URI=/remix/index.php/admin/plans/update?id=49474655-8a55-de7c-5152-572a462edb6f
+HTTP_REFERER=http://localhost/remix/index.php/admin/plans/update?id=49474655-8a55-de7c-5152-572a462edb6f
+---
+2016/09/17 07:45:53 [warning] [application] Failed to set unsafe attribute "profile_pic" of "Frontusers".
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\FrontusersController.php (50)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/17 07:46:01 [warning] [application] Failed to set unsafe attribute "profile_pic" of "Frontusers".
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\FrontusersController.php (50)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/17 07:46:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/user-profile".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/user-pro...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/user-profile/
+HTTP_REFERER=http://localhost/remix/index.php/admin/frontusers/view?id=cd0ef46d-54bb-3cc7-c104-57dcd8733893
+---
+2016/09/17 07:46:09 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/user-profile".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/user-pro...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/user-profile/
+HTTP_REFERER=http://localhost/remix/index.php/admin/frontusers/view?id=cd0ef46d-54bb-3cc7-c104-57dcd8733893
+---
+2016/09/17 07:46:52 [error] [php] Undefined variable: parent (C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#1 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\create.php(19): GenresController->renderPartial()
+#2 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): GenresController->renderInternal()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(782): GenresController->renderPartial()
+#6 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(75): GenresController->render()
+#7 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): GenresController->actionCreate()
+#8 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#10 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#11 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#12 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/genres/create
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php (13)
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\create.php (19)
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (75)
+2016/09/17 07:47:01 [error] [php] Undefined variable: parent (C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#1 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\create.php(19): GenresController->renderPartial()
+#2 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): GenresController->renderInternal()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(782): GenresController->renderPartial()
+#6 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(75): GenresController->render()
+#7 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): GenresController->actionCreate()
+#8 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#10 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#11 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#12 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/genres/create
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php (13)
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\create.php (19)
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (75)
+2016/09/17 07:47:24 [error] [php] Undefined variable: parent (C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php:13)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#1 C:\xampp\htdocs\remix\protected\modules\admin\views\genres\create.php(19): GenresController->renderPartial()
+#2 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require()
+#3 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): GenresController->renderInternal()
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(869): GenresController->renderFile()
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(782): GenresController->renderPartial()
+#6 C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php(75): GenresController->render()
+#7 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): GenresController->actionCreate()
+#8 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#9 C:\xampp\htdocs\remix\framework\web\CController.php(286): GenresController->runAction()
+#10 C:\xampp\htdocs\remix\framework\web\CController.php(265): GenresController->runActionWithFilters()
+#11 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): GenresController->run()
+#12 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#13 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#14 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/admin/genres/create
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\_form.php (13)
+in C:\xampp\htdocs\remix\protected\modules\admin\views\genres\create.php (19)
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\GenresController.php (75)
+2016/09/17 08:21:41 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The requested page does not exist.' in C:\xampp\htdocs\remix\protected\modules\admin\controllers\PlansController.php:169
+Stack trace:
+#0 C:\xampp\htdocs\remix\protected\modules\admin\controllers\PlansController.php(30): PlansController->loadModel('138ceb30-eabd-5...')
+#1 [internal function]: PlansController->actionView('138ceb30-eabd-5...')
+#2 C:\xampp\htdocs\remix\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(PlansController), Array)
+#3 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(PlansController), Object(ReflectionMethod), Array)
+#4 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\remix\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\remix\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('view')
+#8 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/plans/vie...')
+#9 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/remix/index.php/admin/plans/view?id=138ceb30-eabd-5ee5-3458-57dcdaff40a8
+HTTP_REFERER=http://localhost/remix/index.php/admin/remix/manage
+---
+2016/09/17 12:05:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/17 12:05:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/17 14:04:04 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "plans".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('plans')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('plans')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/default/p...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/index.php/admin/plans/test.mp3
+HTTP_REFERER=http://localhost/remix/index.php/admin/plans/manage
+---
