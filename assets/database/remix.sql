@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 17, 2016 at 02:17 PM
+-- Generation Time: Sep 22, 2016 at 06:53 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -370,6 +370,32 @@ CREATE TABLE IF NOT EXISTS `genres` (
 INSERT INTO `genres` (`id`, `parent_id`, `name`, `folder_name`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
 ('1e68b83e-9d7d-a7fb-9e90-57d8f240f05c', '0', 'pop', 'pop', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-14 08:47:35', '2016-09-14 08:47:35'),
 ('b0f04d96-35b4-344e-737b-57d8f2aefa37', '0', 'Hip hop', 'hip-hop', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-14 08:49:08', '2016-09-14 08:49:08');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `invoice`
+--
+
+CREATE TABLE IF NOT EXISTS `invoice` (
+  `id` char(36) NOT NULL,
+  `invoice_text` varchar(16) NOT NULL,
+  `invoice_count` varchar(16) NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
+  `created_by` char(36) NOT NULL,
+  `modified_by` char(36) NOT NULL,
+  `date_entered` datetime NOT NULL,
+  `date_modified` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `invoice`
+--
+
+INSERT INTO `invoice` (`id`, `invoice_text`, `invoice_count`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
+('124097f9-122f-11e6-a8fe-3c07717072c4', 'RE', '000008', 1, 0, '1', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '0000-00-00 00:00:00', '2016-09-22 08:06:02');
 
 -- --------------------------------------------------------
 
@@ -4698,6 +4724,39 @@ INSERT INTO `states` (`id`, `name`, `country_id`, `created_by`, `modified_by`, `
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `transactions`
+--
+
+CREATE TABLE IF NOT EXISTS `transactions` (
+  `id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `invoice` varchar(64) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `plan_id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `transaction_id` varchar(128) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `payment_method` enum('stripe','paypal','offline') COLLATE utf8mb4_unicode_ci NOT NULL,
+  `payment_status` enum('paid','pending','cancelled','reversed') COLLATE utf8mb4_unicode_ci NOT NULL DEFAULT 'pending',
+  `amount` varchar(16) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `details` text COLLATE utf8mb4_unicode_ci,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
+  `created_by` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `modified_by` char(36) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date_entered` datetime NOT NULL,
+  `date_modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `transactions`
+--
+
+INSERT INTO `transactions` (`id`, `invoice`, `user_id`, `plan_id`, `transaction_id`, `payment_method`, `payment_status`, `amount`, `details`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
+('352ae260-9d89-f3d2-4ab5-57e3748cf56c', 'RE-000006', 'c91c7427-fb39-bacf-1d48-57e37475e883', '49474655-8a55-de7c-5152-572a462edb6f', 'TR-000006', 'offline', 'paid', '30', NULL, 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-22 08:06:02', '2016-09-22 08:06:02'),
+('4d954ff8-615d-fc79-c06c-57e3747fa8bc', 'RE-000007', 'c91c7427-fb39-bacf-1d48-57e37475e883', '49474655-8a55-de7c-5152-572a462edb6f', 'TR-000007', 'offline', 'pending', '30', NULL, 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-22 08:06:02', '2016-09-22 08:06:02');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -4730,7 +4789,36 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `password_reset_code`, `first_name`, `last_name`, `email`, `phone`, `is_paid`, `profile_pic`, `state_id`, `country_id`, `is_admin`, `role_id`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
-('7e567f4c-fb69-11e5-91d7-3c07717072c4', 'admin', 'e10adc3949ba59abbe56e057f20f883e', NULL, 'Priyranjan', 'Singh', 'singh.priyranjan@gmail.com', NULL, 0, NULL, 1, 101, 1, '4eee73be-fb69-11e5-91d7-3c07717072c4', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-04-06 00:00:00', '2016-04-06 00:00:00');
+('7e567f4c-fb69-11e5-91d7-3c07717072c4', 'admin', 'e10adc3949ba59abbe56e057f20f883e', NULL, 'Priyranjan', 'Singh', 'singh.priyranjan@gmail.com', NULL, 0, NULL, 1, 101, 1, '4eee73be-fb69-11e5-91d7-3c07717072c4', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-04-06 00:00:00', '2016-04-06 00:00:00'),
+('c91c7427-fb39-bacf-1d48-57e37475e883', 'tullusingh', '25d55ad283aa400af464c76d713c07ad', NULL, 'tullu', 'singh', 'tullu@gmail.com', '9903104919', 1, 'f8ecfb05-Desert.jpg', 256, 13, 0, 'fc1965dc-fc39-11e5-bac4-3c07717072c4', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-22 08:06:01', '2016-09-22 08:06:01');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `user_plan`
+--
+
+CREATE TABLE IF NOT EXISTS `user_plan` (
+  `id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `user_id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `plan_id` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `plan_start_date` date NOT NULL,
+  `plan_end_date` date NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
+  `created_by` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `modified_by` char(36) COLLATE utf8mb4_unicode_ci NOT NULL,
+  `date_entered` datetime NOT NULL,
+  `date_modified` datetime NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+--
+-- Dumping data for table `user_plan`
+--
+
+INSERT INTO `user_plan` (`id`, `user_id`, `plan_id`, `plan_start_date`, `plan_end_date`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
+('16677e3d-9f0c-d1e1-2b33-57e3742c101a', 'c91c7427-fb39-bacf-1d48-57e37475e883', '49474655-8a55-de7c-5152-572a462edb6f', '2016-09-22', '2016-10-22', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-22 08:06:02', '2016-09-22 08:06:02');
 
 -- --------------------------------------------------------
 

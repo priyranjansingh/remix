@@ -16,7 +16,7 @@
 				<div class="box-header with-border">
 					<h3 class="box-title">Front User</h3>
 				</div>
-				<?php $this->renderPartial('_form', array('model'=>$model,'countries'=>$countries)); ?>
+				<?php $this->renderPartial('_form', array('model'=>$model,'countries'=>$countries,'plans'=>$plans)); ?>
 			</div>
 		</div>
 	</div>

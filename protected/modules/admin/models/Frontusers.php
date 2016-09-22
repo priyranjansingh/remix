@@ -26,6 +26,7 @@
 class Frontusers extends AdminBaseModel
 {
 	public $verifyPassword;
+        public $plan;
 	/**
 	 * @return string the associated database table name
 	 */
@@ -42,7 +43,7 @@ class Frontusers extends AdminBaseModel
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, username, password,verifyPassword, email, role_id, created_by, date_entered', 'required'),
+			array('id,plan,username, password,verifyPassword, email, role_id, created_by, date_entered', 'required'),
 			array('username','unique', 'message'=>'Please choose different username.'),
 			array('email','unique', 'message'=>'Email already present in our database.'),
 			array('email','email'),
@@ -81,6 +82,7 @@ class Frontusers extends AdminBaseModel
 	{
 		return array(
 			'id' => 'ID',
+                        'plan' => 'Choose Plan',
 			'username' => 'Username',
 			's3_bucket' => 'S3 Bucket',
 			'password' => 'Password',

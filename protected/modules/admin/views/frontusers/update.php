@@ -16,7 +16,7 @@
 				<div class="box-header with-border">
 					<h3 class="box-title"><?php echo $model->username; ?></h3>
 				</div>
-				<?php $this->renderPartial('_update', array('model'=>$model,'countries'=>$countries,'states'=>$states)); ?>
+				<?php $this->renderPartial('_update', array('model'=>$model,'countries'=>$countries,'states'=>$states,'plans'=>$plans)); ?>
 			</div>
 		</div>
 	</div>

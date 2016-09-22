@@ -1,18 +1,12 @@
 <?php
 
 /**
- * This is the model class for table "transactions".
+ * This is the model class for table "invoice".
  *
- * The followings are the available columns in table 'transactions':
+ * The followings are the available columns in table 'invoice':
  * @property string $id
- * @property string $invoice
- * @property string $user_id
- * @property string $plan_id
- * @property string $transaction_id
- * @property string $payment_method
- * @property string $payment_status
- * @property string $amount
- * @property string $details
+ * @property string $invoice_text
+ * @property string $invoice_count
  * @property integer $status
  * @property integer $deleted
  * @property string $created_by
@@ -20,14 +14,14 @@
  * @property string $date_entered
  * @property string $date_modified
  */
-class Transactions extends AdminBaseModel
+class Invoice extends AdminBaseModel
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'transactions';
+		return 'invoice';
 	}
 
 	/**
@@ -38,18 +32,13 @@ class Transactions extends AdminBaseModel
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, invoice, user_id, plan_id, payment_method, amount, created_by, date_entered', 'required'),
+			array('id, invoice_text, invoice_count, created_by, modified_by, date_entered, date_modified', 'required'),
 			array('status, deleted', 'numerical', 'integerOnly'=>true),
-			array('id, user_id, plan_id, created_by, modified_by', 'length', 'max'=>36),
-			array('invoice', 'length', 'max'=>64),
-			array('transaction_id', 'length', 'max'=>128),
-			array('payment_method', 'length', 'max'=>7),
-			array('payment_status', 'length', 'max'=>9),
-			array('amount', 'length', 'max'=>16),
-			array('details, date_modified', 'safe'),
+			array('id, created_by, modified_by', 'length', 'max'=>36),
+			array('invoice_text, invoice_count', 'length', 'max'=>16),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, invoice, user_id, plan_id, transaction_id, payment_method, payment_status, amount, details, status, deleted, created_by, modified_by, date_entered, date_modified', 'safe', 'on'=>'search'),
+			array('id, invoice_text, invoice_count, status, deleted, created_by, modified_by, date_entered, date_modified', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -71,14 +60,8 @@ class Transactions extends AdminBaseModel
 	{
 		return array(
 			'id' => 'ID',
-			'invoice' => 'Invoice',
-			'user_id' => 'User',
-			'plan_id' => 'Plan',
-			'transaction_id' => 'Transaction',
-			'payment_method' => 'Payment Method',
-			'payment_status' => 'Payment Status',
-			'amount' => 'Amount',
-			'details' => 'Details',
+			'invoice_text' => 'Invoice Text',
+			'invoice_count' => 'Invoice Count',
 			'status' => 'Status',
 			'deleted' => 'Deleted',
 			'created_by' => 'Created By',
@@ -107,14 +90,8 @@ class Transactions extends AdminBaseModel
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id,true);
-		$criteria->compare('invoice',$this->invoice,true);
-		$criteria->compare('user_id',$this->user_id,true);
-		$criteria->compare('plan_id',$this->plan_id,true);
-		$criteria->compare('transaction_id',$this->transaction_id,true);
-		$criteria->compare('payment_method',$this->payment_method,true);
-		$criteria->compare('payment_status',$this->payment_status,true);
-		$criteria->compare('amount',$this->amount,true);
-		$criteria->compare('details',$this->details,true);
+		$criteria->compare('invoice_text',$this->invoice_text,true);
+		$criteria->compare('invoice_count',$this->invoice_count,true);
 		$criteria->compare('status',$this->status);
 		$criteria->compare('deleted',$this->deleted);
 		$criteria->compare('created_by',$this->created_by,true);
@@ -131,7 +108,7 @@ class Transactions extends AdminBaseModel
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return Transactions the static model class
+	 * @return Invoice the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{

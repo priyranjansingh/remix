@@ -74,6 +74,13 @@
 			<?php echo $form->error($model,'country_id'); ?>
 		</div>
 	</div>
+    <div class="form-group">
+        <div class="col-xs-12">
+            <?php echo $form->labelEx($model, 'plan'); ?>
+            <?php echo $form->dropDownList($model, 'plan', $plans, array('class' => 'form-control')); ?>
+            <?php echo $form->error($model, 'plan'); ?>
+        </div>
+    </div>
 </div>
 <div class="box-footer">
     <?php echo CHtml::link('Back', array('/admin/frontusers'), array("class" => 'btn btn-info pull-right', "style" => "margin-left:10px;")); ?>
