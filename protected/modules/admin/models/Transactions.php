@@ -61,6 +61,8 @@ class Transactions extends AdminBaseModel
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
+                    'user_detail' => array(self::BELONGS_TO, 'Users', 'user_id'),
+                    'plan_detail' => array(self::BELONGS_TO, 'Plans', 'plan_id'),
 		);
 	}
 
@@ -74,7 +76,7 @@ class Transactions extends AdminBaseModel
 			'invoice' => 'Invoice',
 			'user_id' => 'User',
 			'plan_id' => 'Plan',
-			'transaction_id' => 'Transaction',
+			'transaction_id' => 'Transaction ID',
 			'payment_method' => 'Payment Method',
 			'payment_status' => 'Payment Status',
 			'amount' => 'Amount',
@@ -137,4 +139,6 @@ class Transactions extends AdminBaseModel
 	{
 		return parent::model($className);
 	}
+        
+        
 }

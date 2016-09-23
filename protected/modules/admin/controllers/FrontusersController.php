@@ -146,6 +146,13 @@ class FrontusersController extends Controller {
         $plans = CHtml::listData($plans, 'id', 'plan_name');
         // Uncomment the following line if AJAX validation is needed
         // $this->performAjaxValidation($model);
+        
+        // getting the user active plan
+        $current_user_plan = UserPlan::model()->find(array("condition"=>"user_id = '$id' AND status = 1 AND deleted = 0 "));
+        if(!empty($current_user_plan))
+        {
+            $model->plan = $current_user_plan->plan_id;
+        }    
 
         if (isset($_POST['Frontusers'])) {
             if (empty($prev_profile_pic)) {
@@ -165,7 +172,10 @@ class FrontusersController extends Controller {
                     $model->profile_pic = NULL;
                 }
             }
-            $model->attributes = $_POST['Frontusers'];
+            $model->attributes =  $_POST['Frontusers'];
+            $model->verifyPassword = $model->password;
+            //$model->validate();
+            //pre($model->errors,true);
             if ($model->save()) {
                 if (!empty($model->profile_pic))
                     $profile_pic->saveAs('assets/user-profile/' . $model->profile_pic);
@@ -187,6 +197,11 @@ class FrontusersController extends Controller {
      * @param integer $id the ID of the model to be deleted
      */
     public function actionDelete($id) {
+        // deleting from user_plan table
+        UserPlan::model()->deleteAll(array("condition" => "user_id = '$id'"));
+        // deleting from trasactions table
+        Transactions::model()->deleteAll(array("condition" => "user_id = '$id'"));
+        
         $this->loadModel($id)->delete();
 
         // if AJAX request (triggered by deletion via admin grid view), we should not redirect the browser

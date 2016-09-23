@@ -122,7 +122,8 @@
                         <li><a href="<?php echo base_url() . "/admin/plans"; ?>"><i class="fa fa-users"></i> <span>Membership Plan</span></a></li>
                        <li><a href="<?php echo base_url() . "/admin/remix"; ?>"><i class="fa fa-music"></i> <span>Remix Management</span></a></li>
                        <li><a href="<?php echo base_url() . "/admin/originalsong"; ?>"><i class="fa fa-music"></i> <span>Original Song Management</span></a></li>
-                        <li>
+                       <li><a href="<?php echo base_url() . "/admin/transactions"; ?>"><i class="fa fa-money"></i> <span>Transactions</span></a></li> 
+                       <li>
                           <!--<a href="<?php echo base_url() . "/admin/transactions"; ?>"><i class="fa fa-university"></i> <span>Transactions</span></a>-->
                         </li>
                     </ul>
