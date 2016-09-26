@@ -3,14 +3,9 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/views/frontusers/create.php</file>
-            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/controllers/FrontusersController.php</file>
-            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/models/Invoice.php</file>
-            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/views/frontusers/update.php</file>
-            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/models/Transactions.php</file>
-            <file>file:/C:/xampp/htdocs/remix/protected/config/global.php</file>
-            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/views/frontusers/_form.php</file>
-            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/views/frontusers/_update.php</file>
+            <file>file:/C:/xampp/htdocs/remix/protected/components/helpers.php</file>
+            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/views/dashboard/index.php</file>
+            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/controllers/DashboardController.php</file>
         </group>
     </open-files>
 </project-private>

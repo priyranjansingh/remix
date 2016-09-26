@@ -5679,3 +5679,129 @@ Stack trace:
 REQUEST_URI=/remix/index.php/admin/transactions/view?id=d79d0f4f-6c7b-c40a-f6f4-57e4f652594e
 HTTP_REFERER=http://localhost/remix/index.php/admin/transactions/manage
 ---
+2016/09/23 16:30:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/23 16:30:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/23 16:30:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/23 16:30:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/23 16:42:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/23 16:42:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/23 16:42:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/23 16:42:52 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/25 10:46:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/25 10:46:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/25 10:46:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/highcharts.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/highcharts.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/25 10:46:42 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/js/highcharts/no-data-to-display.js".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/js/highcharts/no-data-to-display.js
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/09/25 11:30:02 [error] [php] array_push() expects parameter 1 to be array, null given (C:\xampp\htdocs\remix\protected\modules\admin\controllers\DashboardController.php:29)
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#1 C:\xampp\htdocs\remix\framework\web\CController.php(286): DashboardController->runAction()
+#2 C:\xampp\htdocs\remix\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#3 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): DashboardController->run()
+#4 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#5 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/dashboard
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\DashboardController.php (29)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/25 13:19:02 [warning] [application] Failed to set unsafe attribute "profile_pic" of "Frontusers".
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\FrontusersController.php (48)
+in C:\xampp\htdocs\remix\index.php (13)
+2016/09/26 08:26:17 [warning] [application] Failed to set unsafe attribute "profile_pic" of "Frontusers".
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\FrontusersController.php (48)
+in C:\xampp\htdocs\remix\index.php (13)

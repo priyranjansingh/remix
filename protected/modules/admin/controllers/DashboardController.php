@@ -20,16 +20,32 @@ class DashboardController extends Controller {
 
     public function actionIndex() {
         if (isFrontUserLoggedIn()) {
-            $active_users = Users::model()->findAll(array("condition"=>"status = 1"));
-            $inactive_users = Users::model()->findAll(array("condition"=>"status = 0"));
-            $paid_users = Users::model()->findAll(array("condition"=>"is_paid = 1"));
-            $non_paid_users = Users::model()->findAll(array("condition"=>"is_paid = 0"));
-            
+            $active_users = Users::model()->findAll(array("condition"=>"status = 1 AND is_admin = 0 "));
+            $inactive_users = Users::model()->findAll(array("condition"=>"status = 0 AND is_admin = 0"));
+            $paid_users = Users::model()->findAll(array("condition"=>"is_paid = 1 AND is_admin = 0"));
+            $non_paid_users = Users::model()->findAll(array("condition"=>"is_paid = 0 AND is_admin = 0"));
+            $data_arr = array();
+            $data_arr['user_data'] = array();
+            $data_arr['last_five_customer'] = array();
             $count_active_users =   count($active_users);
+            array_push($data_arr['user_data'],$count_active_users);
             $count_inactive_users = count($inactive_users);
+            array_push($data_arr['user_data'],$count_inactive_users);
             $count_paid_users =     count($paid_users);
+            array_push($data_arr['user_data'],$count_paid_users);
             $count_non_paid_users = count($non_paid_users);
-            $this->render('index');
+            array_push($data_arr['user_data'],$count_non_paid_users);
+            // getting the last 5 customers
+            
+            $last_five_customers = Users::model()->findAll(array("condition"=>"is_admin = 0 ","limit"=>5,"order"=> "date_entered DESC"));
+            $data_arr['last_five_customer'] = $last_five_customers;
+            
+            // getting last five transactions
+            
+            $last_five_trans = Transactions::model()->findAll(array("condition"=>"deleted = 0 ","limit"=>5,"order"=> "date_entered DESC"));
+            $data_arr['last_five_trans'] = $last_five_trans;
+            
+            $this->render('index',array('data_arr'=>$data_arr));
         } else {
             $this->redirect(CController::createUrl("/admin/login"));
         }

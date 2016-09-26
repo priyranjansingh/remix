@@ -138,7 +138,7 @@
                 <!-- /.content -->
                
                 
-                <div class="sticky_player" data-sticky="true" style="position: fixed; bottom: 0px;">
+                <div class="sticky_player" data-sticky="true" style="position: fixed; bottom: 0px;display:none">
                     <div class="play_list"></div>
                     <div class="container player_wrapper">
                       <div class="row">

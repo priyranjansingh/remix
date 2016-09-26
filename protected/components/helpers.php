@@ -713,5 +713,41 @@ function clean($string) {
    return strtolower(preg_replace('/[^A-Za-z0-9\-]/', '', $string)); // Removes special chars.
 }
 
+// function for getting the label of the status
+
+function getStatusLabel($status)
+{
+    $return_arr = array();
+    if($status == 1)
+    {
+        $return_arr['label'] = 'Active';
+        $return_arr['class'] = 'label-success';
+    }
+    else if($status == 0)
+    {
+        $return_arr['label'] = 'Inactive';
+        $return_arr['class'] = 'label-danger';
+    } 
+    return $return_arr;
+}
+
+// function for getting the label of the payment status
+
+function getPaymentStatus($status)
+{
+    $return_arr = array();
+    if($status == 1)
+    {
+        $return_arr['label'] = 'Yes';
+        $return_arr['class'] = 'label-success';
+    }
+    else if($status == 0)
+    {
+        $return_arr['label'] = 'No';
+        $return_arr['class'] = 'label-danger';
+    } 
+    return $return_arr;
+}
+
 
 ?>
