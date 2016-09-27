@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 22, 2016 at 06:53 PM
+-- Generation Time: Sep 27, 2016 at 04:26 PM
 -- Server version: 5.6.16
 -- PHP Version: 5.5.9
 
@@ -395,7 +395,33 @@ CREATE TABLE IF NOT EXISTS `invoice` (
 --
 
 INSERT INTO `invoice` (`id`, `invoice_text`, `invoice_count`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
-('124097f9-122f-11e6-a8fe-3c07717072c4', 'RE', '000008', 1, 0, '1', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '0000-00-00 00:00:00', '2016-09-22 08:06:02');
+('124097f9-122f-11e6-a8fe-3c07717072c4', 'RE', '000014', 1, 0, '1', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '0000-00-00 00:00:00', '2016-09-26 08:26:17');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `newsletter_email`
+--
+
+CREATE TABLE IF NOT EXISTS `newsletter_email` (
+  `id` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `email` text NOT NULL,
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  `deleted` tinyint(1) NOT NULL DEFAULT '0',
+  `created_by` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci NOT NULL,
+  `modified_by` char(36) CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `date_entered` datetime NOT NULL,
+  `date_modified` datetime DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `newsletter_email`
+--
+
+INSERT INTO `newsletter_email` (`id`, `email`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
+('d94cd10f-8486-11e6-9713-1803735eeb28', 'abc@gmail.com', 1, 0, '1', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-28 00:00:00', '2016-09-27 16:26:13'),
+('e858aefb-8486-11e6-9713-1803735eeb28', 'def@gmail.com', 1, 0, '1', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-27 00:00:00', '2016-09-27 16:26:16');
 
 -- --------------------------------------------------------
 
@@ -4751,8 +4777,12 @@ CREATE TABLE IF NOT EXISTS `transactions` (
 --
 
 INSERT INTO `transactions` (`id`, `invoice`, `user_id`, `plan_id`, `transaction_id`, `payment_method`, `payment_status`, `amount`, `details`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
-('352ae260-9d89-f3d2-4ab5-57e3748cf56c', 'RE-000006', 'c91c7427-fb39-bacf-1d48-57e37475e883', '49474655-8a55-de7c-5152-572a462edb6f', 'TR-000006', 'offline', 'paid', '30', NULL, 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-22 08:06:02', '2016-09-22 08:06:02'),
-('4d954ff8-615d-fc79-c06c-57e3747fa8bc', 'RE-000007', 'c91c7427-fb39-bacf-1d48-57e37475e883', '49474655-8a55-de7c-5152-572a462edb6f', 'TR-000007', 'offline', 'pending', '30', NULL, 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-22 08:06:02', '2016-09-22 08:06:02');
+('1dd5939c-872c-63d5-c91f-57e4f634cc56', 'RE-000009', '68c69da8-97f1-f82e-8a74-57e4f62375fd', '49474655-8a55-de7c-5152-572a462edb6f', 'TR-000009', 'offline', 'pending', '30', NULL, 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-23 11:33:34', '2016-09-23 11:33:34'),
+('7e7f7f65-a120-b6b3-3d7b-57e7b2c837bf', 'RE-000010', '4daacfe2-f930-3b9e-f770-57e7b2dd42f9', '49474655-8a55-de7c-5152-572a462edb6f', 'TR-000010', 'offline', 'paid', '30', NULL, 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-25 13:19:02', '2016-09-25 13:19:02'),
+('995adb7c-b44e-b532-a8b6-57e7b278daef', 'RE-000011', '4daacfe2-f930-3b9e-f770-57e7b2dd42f9', '49474655-8a55-de7c-5152-572a462edb6f', 'TR-000011', 'offline', 'pending', '30', NULL, 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-25 13:19:02', '2016-09-25 13:19:02'),
+('a3b87b98-fa6d-f04a-0da9-57e8bfc68933', 'RE-000012', '716cbd00-54f7-e57b-a006-57e8bfd0cd18', '49474655-8a55-de7c-5152-572a462edb6f', 'TR-000012', 'offline', 'paid', '30', NULL, 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-26 08:26:17', '2016-09-26 08:26:17'),
+('b646b821-ffdf-5d7b-382b-57e8bf51906d', 'RE-000013', '716cbd00-54f7-e57b-a006-57e8bfd0cd18', '49474655-8a55-de7c-5152-572a462edb6f', 'TR-000013', 'offline', 'pending', '30', NULL, 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-26 08:26:17', '2016-09-26 08:26:17'),
+('d79d0f4f-6c7b-c40a-f6f4-57e4f652594e', 'RE-000008', '68c69da8-97f1-f82e-8a74-57e4f62375fd', '49474655-8a55-de7c-5152-572a462edb6f', 'TR-000008', 'offline', 'paid', '30', NULL, 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-23 11:33:34', '2016-09-23 11:33:34');
 
 -- --------------------------------------------------------
 
@@ -4789,8 +4819,10 @@ CREATE TABLE IF NOT EXISTS `users` (
 --
 
 INSERT INTO `users` (`id`, `username`, `password`, `password_reset_code`, `first_name`, `last_name`, `email`, `phone`, `is_paid`, `profile_pic`, `state_id`, `country_id`, `is_admin`, `role_id`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
-('7e567f4c-fb69-11e5-91d7-3c07717072c4', 'admin', 'e10adc3949ba59abbe56e057f20f883e', NULL, 'Priyranjan', 'Singh', 'singh.priyranjan@gmail.com', NULL, 0, NULL, 1, 101, 1, '4eee73be-fb69-11e5-91d7-3c07717072c4', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-04-06 00:00:00', '2016-04-06 00:00:00'),
-('c91c7427-fb39-bacf-1d48-57e37475e883', 'tullusingh', '25d55ad283aa400af464c76d713c07ad', NULL, 'tullu', 'singh', 'tullu@gmail.com', '9903104919', 1, 'f8ecfb05-Desert.jpg', 256, 13, 0, 'fc1965dc-fc39-11e5-bac4-3c07717072c4', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-22 08:06:01', '2016-09-22 08:06:01');
+('4daacfe2-f930-3b9e-f770-57e7b2dd42f9', 'montikumar', 'e10adc3949ba59abbe56e057f20f883e', NULL, 'Monti', 'Singh', 'monti@gmail.com', '123456', 1, '13e69e19-Desert.jpg', 256, 13, 0, 'fc1965dc-fc39-11e5-bac4-3c07717072c4', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-25 13:19:02', '2016-09-25 13:19:02'),
+('68c69da8-97f1-f82e-8a74-57e4f62375fd', 'tullusingh', '25d55ad283aa400af464c76d713c07ad', NULL, 'tullu', 'singh', 'tullu@gmail.com', '9903104919', 1, '431bc08a-Desert.jpg', 251, 13, 0, 'fc1965dc-fc39-11e5-bac4-3c07717072c4', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-23 11:33:33', '2016-09-23 11:33:33'),
+('716cbd00-54f7-e57b-a006-57e8bfd0cd18', 'tomtom', 'e10adc3949ba59abbe56e057f20f883e', NULL, 'Tom ', 'Dsuza', 'tom@gmail.com', '9903104919', 1, '40abd6a6-Lighthouse.jpg', 336, 17, 0, 'fc1965dc-fc39-11e5-bac4-3c07717072c4', 0, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-26 08:26:17', '2016-09-26 08:26:17'),
+('7e567f4c-fb69-11e5-91d7-3c07717072c4', 'admin', 'e10adc3949ba59abbe56e057f20f883e', NULL, 'Priyranjan', 'Singh', 'singh.priyranjan@gmail.com', NULL, 0, NULL, 1, 101, 1, '4eee73be-fb69-11e5-91d7-3c07717072c4', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-04-06 00:00:00', '2016-04-06 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -4818,7 +4850,9 @@ CREATE TABLE IF NOT EXISTS `user_plan` (
 --
 
 INSERT INTO `user_plan` (`id`, `user_id`, `plan_id`, `plan_start_date`, `plan_end_date`, `status`, `deleted`, `created_by`, `modified_by`, `date_entered`, `date_modified`) VALUES
-('16677e3d-9f0c-d1e1-2b33-57e3742c101a', 'c91c7427-fb39-bacf-1d48-57e37475e883', '49474655-8a55-de7c-5152-572a462edb6f', '2016-09-22', '2016-10-22', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-22 08:06:02', '2016-09-22 08:06:02');
+('670f2953-8bf0-0592-1de7-57e7b2e71054', '4daacfe2-f930-3b9e-f770-57e7b2dd42f9', '49474655-8a55-de7c-5152-572a462edb6f', '2016-09-25', '2016-10-25', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-25 13:19:02', '2016-09-25 13:19:02'),
+('88218258-d94c-0b18-9d6e-57e8bfef382e', '716cbd00-54f7-e57b-a006-57e8bfd0cd18', '49474655-8a55-de7c-5152-572a462edb6f', '2016-09-26', '2016-10-26', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-26 08:26:17', '2016-09-26 08:26:17'),
+('a84189f2-ed21-1ca4-2350-57e4f6013e2c', '68c69da8-97f1-f82e-8a74-57e4f62375fd', '49474655-8a55-de7c-5152-572a462edb6f', '2016-09-23', '2016-10-23', 1, 0, '7e567f4c-fb69-11e5-91d7-3c07717072c4', '7e567f4c-fb69-11e5-91d7-3c07717072c4', '2016-09-23 11:33:33', '2016-09-23 11:33:33');
 
 -- --------------------------------------------------------
 
