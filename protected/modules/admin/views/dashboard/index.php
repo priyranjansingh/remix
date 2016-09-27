@@ -56,13 +56,19 @@
                                     ?>
                                     <tr>
                                         <td><?php echo $customer->username; ?></td>
-                                        <td><?php echo $customer->first_name." ".$customer->last_name;  ?></td>
-                                        <td><span class="label <?php echo $status['class']; ?>"><?php echo $status['label'];  ?></span></td>
-                                        <td><span class="label <?php echo $payment['class']; ?>"><?php echo $payment['label'];  ?></span></td>
-                                        <td><?php echo $customer->date_entered;?></td>
+                                        <td><?php echo $customer->first_name . " " . $customer->last_name; ?></td>
+                                        <td><span class="label <?php echo $status['class']; ?>"><?php echo $status['label']; ?></span></td>
+                                        <td><span class="label <?php echo $payment['class']; ?>"><?php echo $payment['label']; ?></span></td>
+                                        <td><?php echo $customer->date_entered; ?></td>
                                     </tr>
                                     <?php
                                 }
+                                ?>
+                                <tr> 
+                                    <td colspan="5"> <a href="<?php echo base_url(); ?>/admin/frontusers">View All</a></td>
+                                </tr>   
+
+                                <?php
                             }
                             ?>
                         </tbody></table>
@@ -73,7 +79,7 @@
         </div>
     </div>
 
-     <div class="row">
+    <div class="row">
         <div class="col-xs-12">
             <div class="box">
                 <div class="box-header">
@@ -95,26 +101,38 @@
                                 <th>Username</th>
                                 <th>Amount</th>
                                 <th>Payment Method</th>
-                                <th>Status</th>
+                                <th>Payment Status</th>
                                 <th>Added</th>
                             </tr>
                             <?php
                             if (!empty($data_arr['last_five_trans'])) {
                                 foreach ($data_arr['last_five_trans'] as $tran) {
-                                    $status = getStatusLabel($tran->status);
+                                    $status = getPaymentStatusLabel($tran->payment_status);
                                     ?>
                                     <tr>
                                         <td><?php echo $tran->invoice; ?></td>
-                                        <td><?php echo $tran->user_detail->username;  ?></td>
-                                        <td><?php echo $tran->amount;  ?></td>
-                                        <td><?php echo $tran->payment_method;  ?></td>
-                                        <td><span class="label <?php echo $status['class']; ?>"><?php echo $status['label'];  ?></span></td>
-                                        <td><?php echo $tran->date_entered;?></td>
+                                        <td><?php echo $tran->user_detail->username; ?></td>
+                                        <td><?php echo $tran->amount; ?></td>
+                                        <td><?php echo $tran->payment_method; ?></td>
+                                        <td><span class="label <?php echo $status['class']; ?>"><?php echo $status['label']; ?></span></td>
+                                        <td><?php echo $tran->date_entered; ?></td>
                                     </tr>
                                     <?php
                                 }
-                            }
-                            ?>
+                                ?>
+                                <tr> 
+                                    <td colspan="5"> <a href="<?php echo base_url(); ?>/admin/transactions">View All</a></td>
+                                </tr>   
+
+                                <?php
+                            } else {
+                                ?>
+                                <tr>
+                                    <td colspan="6">No Record</td>
+                                </tr>   
+    <?php
+}
+?>
                         </tbody></table>
                 </div>
                 <!-- /.box-body -->

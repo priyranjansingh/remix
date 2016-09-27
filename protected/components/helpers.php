@@ -749,5 +749,24 @@ function getPaymentStatus($status)
     return $return_arr;
 }
 
+// function for getting the label of the status
+
+function getPaymentStatusLabel($status)
+{
+    $return_arr = array();
+    if($status == 'pending')
+    {
+        $return_arr['label'] = 'Pending';
+        $return_arr['class'] = 'label-warning';
+    }
+    else if($status == 'paid')
+    {
+        $return_arr['label'] = 'Paid';
+        $return_arr['class'] = 'label-success';
+    } 
+    return $return_arr;
+}
+
+
 
 ?>

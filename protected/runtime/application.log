@@ -5805,3 +5805,23 @@ in C:\xampp\htdocs\remix\index.php (13)
 2016/09/26 08:26:17 [warning] [application] Failed to set unsafe attribute "profile_pic" of "Frontusers".
 in C:\xampp\htdocs\remix\protected\modules\admin\controllers\FrontusersController.php (48)
 in C:\xampp\htdocs\remix\index.php (13)
+2016/09/27 09:20:16 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "NewsletterEmail/default/changeStatus".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('NewsletterEmail...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/NewsletterEmail/changeStatus
+HTTP_REFERER=http://localhost/remix/index.php/admin/newsletteremail/manage
+---
+2016/09/27 09:46:07 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "admin".' in C:\xampp\htdocs\remix\framework\web\CController.php:483
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CController.php(270): CController->missingAction('admin')
+#1 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): CController->run('admin')
+#2 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('admin/newslette...')
+#3 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/remix/index.php/admin/newsletteremail/admin
+HTTP_REFERER=http://localhost/remix/index.php/admin/newsletteremail/manage
+---
