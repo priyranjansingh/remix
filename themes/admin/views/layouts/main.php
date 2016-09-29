@@ -11,7 +11,7 @@
         ?>
         <!-- Tell the browser to be responsive to screen width -->
         <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
-       
+
 
         <!-- Bootstrap 3.3.5 -->
         <link rel="stylesheet" href="<?php echo $baseUrl; ?>/bootstrap/css/bootstrap.min.css">
@@ -32,19 +32,19 @@
             <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
-        
-         <script>
+
+        <script>
             var base_url = "<?php echo base_url(); ?>";
         </script>   
-        
-        
+
+
         <script src="<?php echo base_url(); ?>/assets/js/jplayer/js/jquery.jplayer.min.js"></script>
         <script src="<?php echo base_url(); ?>/assets/js/jplayer/js/audio.js"></script>
         <script src="<?php echo base_url(); ?>/assets/js/common.js"></script>
-        
 
-            
-        
+
+
+
     </head>
     <body class="hold-transition skin-blue sidebar-mini">
         <div class="wrapper">
@@ -115,15 +115,36 @@
                         <li><a href="<?php echo base_url() . "/admin/genres"; ?>"><i class="fa fa-tag"></i> <span>Genres</span></a></li>
                         <li><a href="<?php echo base_url() . "/admin/version"; ?>"><i class="fa fa-tasks"></i> <span>Version</span></a></li>
                         <li><a href="<?php echo base_url() . "/admin/coupon"; ?>"><i class="fa fa-barcode"></i> <span>Coupons</span></a></li>
-            <!--            <li><a href="<?php echo base_url() . "/admin/songs"; ?>"><i class="fa fa-users"></i> <span>Songs</span></a></li>
-                        <li><a href="<?php echo base_url() . "/admin/videos"; ?>"><i class="fa fa-users"></i> <span>Videos</span></a></li>-->
-                        <li><a href="<?php echo base_url() . "/admin/frontusers"; ?>"><i class="fa fa-users"></i> <span>Front Users</span></a></li>
-                        <li><a href="<?php echo base_url() . "/admin/adminusers"; ?>"><i class="fa fa-users"></i> <span>Admin Users</span></a></li>
-                        <li><a href="<?php echo base_url() . "/admin/plans"; ?>"><i class="fa fa-users"></i> <span>Membership Plan</span></a></li>
-                       <li><a href="<?php echo base_url() . "/admin/remix"; ?>"><i class="fa fa-music"></i> <span>Remix Management</span></a></li>
-                       <li><a href="<?php echo base_url() . "/admin/originalsong"; ?>"><i class="fa fa-music"></i> <span>Original Song Management</span></a></li>
-                       <li><a href="<?php echo base_url() . "/admin/transactions"; ?>"><i class="fa fa-money"></i> <span>Transactions</span></a></li> 
-                       <li><a href="<?php echo base_url() . "/admin/newsletteremail"; ?>"><i class="fa fa-newspaper-o"></i> <span>Newsletter Emails</span></a></li> 
+                        <li class="treeview <?php echo isMenuActive(array('frontusers','adminusers'),Yii::app()->controller->id); ?>">
+                            <a href="#">
+                                <i class="fa fa-users"></i>
+                                <span>Users</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li class="<?php echo isMenuActive(array('frontusers'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/frontusers"; ?>"><i class="fa fa-circle-o"></i> Front Users</a></li>
+                                <li class="<?php echo isMenuActive(array('adminusers'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/adminusers"; ?>"><i class="fa fa-circle-o"></i> Admin Users</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="<?php echo base_url() . "/admin/plans"; ?>"><i class="fa fa-book"></i> <span>Membership Plan</span></a></li>
+                        <li class="treeview <?php echo isMenuActive(array('remix','originalsong'),Yii::app()->controller->id); ?>">
+                            <a href="#">
+                                <i class="fa fa-music"></i>
+                                <span>Music</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li class="<?php echo isMenuActive(array('remix'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/remix"; ?>"><i class="fa fa-circle-o"></i> Remix Management</a></li>
+                                <li class="<?php echo isMenuActive(array('originalsong'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/originalsong"; ?>"><i class="fa fa-circle-o"></i> Original Song Management</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="<?php echo base_url() . "/admin/transactions"; ?>"><i class="fa fa-money"></i> <span>Transactions</span></a></li> 
+                        <li><a href="<?php echo base_url() . "/admin/newsletteremail"; ?>"><i class="fa fa-newspaper-o"></i> <span>Newsletter Emails</span></a></li> 
+                        
                     </ul>
                 </section>
                 <!-- /.sidebar -->
@@ -134,39 +155,39 @@
                 <!-- Main content -->
                 <?php echo $content; ?> 
                 <!-- /.content -->
-               
-                
+
+
                 <div class="sticky_player" data-sticky="true" style="position: fixed; bottom: 0px;display:none">
                     <div class="play_list"></div>
                     <div class="container player_wrapper">
-                      <div class="row">
-                        <div id="player-instance" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_0" preload="metadata"></audio></div>
-                        <div class="jp-title audio-title"></div>
-                        <div class="rock_controls controls">
-                          <div class="fa fa-play jp-play" style="display: block;"></div>
-                          <div class="fa fa-pause jp-pause" style="display: none;"></div>
-                        </div>
-                        <!--controls-->
-                        <div class="audio-progress">
-                          <div class="jp-seek-bar" style="width: 0%;">
-                            <div class="audio-play-bar jp-play-bar" style="width: 0%;"></div>
-                          </div>
-                          <!--jp-seek-bar--> 
-                        </div>
-                        <!--audio-progress-->
-                        <div class="audio-timer"> <span class="jp-current-time">00:00</span> </div>
-                        <div class="jp-volume">
-                          <ul>
-                            <li class="active"><a href="#"></a></li>
-                            <li class="active"><a href="#"></a></li>
-                            <li class="active"><a href="#"></a></li>
-                            <li class="active"><a href="#"></a></li>
-                            <li><a href="#"></a></li>
-                          </ul>
-                        </div>
-                        <a href="#" class="playlist_expander fa fa-bars"></a> </div>
+                        <div class="row">
+                            <div id="player-instance" class="jp-jplayer" style="width: 0px; height: 0px;"><img id="jp_poster_0" style="width: 0px; height: 0px; display: none;"><audio id="jp_audio_0" preload="metadata"></audio></div>
+                            <div class="jp-title audio-title"></div>
+                            <div class="rock_controls controls">
+                                <div class="fa fa-play jp-play" style="display: block;"></div>
+                                <div class="fa fa-pause jp-pause" style="display: none;"></div>
+                            </div>
+                            <!--controls-->
+                            <div class="audio-progress">
+                                <div class="jp-seek-bar" style="width: 0%;">
+                                    <div class="audio-play-bar jp-play-bar" style="width: 0%;"></div>
+                                </div>
+                                <!--jp-seek-bar--> 
+                            </div>
+                            <!--audio-progress-->
+                            <div class="audio-timer"> <span class="jp-current-time">00:00</span> </div>
+                            <div class="jp-volume">
+                                <ul>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li class="active"><a href="#"></a></li>
+                                    <li><a href="#"></a></li>
+                                </ul>
+                            </div>
+                            <a href="#" class="playlist_expander fa fa-bars"></a> </div>
                     </div>
-                  </div>
+                </div>
             </div>
             <!-- /.content-wrapper -->
             <footer class="main-footer">
@@ -184,7 +205,7 @@
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.min.js"></script>
         <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
         <script>
-            $.widget.bridge('uibutton', $.ui.button);
+             $.widget.bridge('uibutton', $.ui.button);
         </script>
         <!-- Bootstrap 3.3.5 -->
         <script src="<?php echo $baseUrl; ?>/bootstrap/js/bootstrap.min.js"></script>
@@ -205,6 +226,6 @@
         <script src="<?php echo $baseUrl; ?>/dist/js/pages/dashboard.js"></script>
         <!-- AdminLTE for demo purposes -->
         <script src="<?php echo $baseUrl; ?>/dist/js/demo.js"></script>
-         <span class="loading"></span>
+        <span class="loading"></span>
     </body>
 </html>

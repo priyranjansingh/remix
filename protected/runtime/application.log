@@ -5825,3 +5825,30 @@ Stack trace:
 REQUEST_URI=/remix/index.php/admin/newsletteremail/admin
 HTTP_REFERER=http://localhost/remix/index.php/admin/newsletteremail/manage
 ---
+2016/09/29 02:41:21 [error] [php] Missing argument 1 for CModule::getModule(), called in C:\xampp\htdocs\remix\framework\base\CComponent.php on line 111 and defined (C:\xampp\htdocs\remix\framework\base\CModule.php:269)
+Stack trace:
+#0 C:\xampp\htdocs\remix\themes\admin\views\layouts\main.php(101): CWebApplication->__get()
+#1 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require()
+#2 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): DashboardController->renderInternal()
+#3 C:\xampp\htdocs\remix\framework\web\widgets\CContentDecorator.php(76): DashboardController->renderFile()
+#4 C:\xampp\htdocs\remix\framework\web\widgets\CContentDecorator.php(54): CContentDecorator->decorate()
+#5 C:\xampp\htdocs\remix\framework\web\widgets\COutputProcessor.php(44): CContentDecorator->processOutput()
+#6 C:\xampp\htdocs\remix\framework\web\CBaseController.php(214): CContentDecorator->run()
+#7 C:\xampp\htdocs\remix\framework\web\CBaseController.php(308): DashboardController->endWidget()
+#8 C:\xampp\htdocs\remix\themes\admin\views\layouts\column2.php(4): DashboardController->endContent()
+#9 C:\xampp\htdocs\remix\framework\web\CBaseController.php(126): require()
+#10 C:\xampp\htdocs\remix\framework\web\CBaseController.php(95): DashboardController->renderInternal()
+#11 C:\xampp\htdocs\remix\framework\web\CController.php(784): DashboardController->renderFile()
+#12 C:\xampp\htdocs\remix\protected\modules\admin\controllers\DashboardController.php(48): DashboardController->render()
+#13 C:\xampp\htdocs\remix\framework\web\actions\CInlineAction.php(49): DashboardController->actionIndex()
+#14 C:\xampp\htdocs\remix\framework\web\CController.php(308): CInlineAction->runWithParams()
+#15 C:\xampp\htdocs\remix\framework\web\CController.php(286): DashboardController->runAction()
+#16 C:\xampp\htdocs\remix\framework\web\CController.php(265): DashboardController->runActionWithFilters()
+#17 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(282): DashboardController->run()
+#18 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#19 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#20 C:\xampp\htdocs\remix\index.php(13): CWebApplication->run()
+REQUEST_URI=/remix/index.php/admin/dashboard
+in C:\xampp\htdocs\remix\themes\admin\views\layouts\main.php (101)
+in C:\xampp\htdocs\remix\themes\admin\views\layouts\column2.php (4)
+in C:\xampp\htdocs\remix\protected\modules\admin\controllers\DashboardController.php (48)

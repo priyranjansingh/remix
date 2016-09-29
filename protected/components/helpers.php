@@ -709,64 +709,58 @@ function getPlanDurationLabelPaypal($duration) {
 // function for removing the special charecters from the string 
 
 function clean($string) {
-   $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
-   return strtolower(preg_replace('/[^A-Za-z0-9\-]/', '', $string)); // Removes special chars.
+    $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
+    return strtolower(preg_replace('/[^A-Za-z0-9\-]/', '', $string)); // Removes special chars.
 }
 
 // function for getting the label of the status
 
-function getStatusLabel($status)
-{
+function getStatusLabel($status) {
     $return_arr = array();
-    if($status == 1)
-    {
+    if ($status == 1) {
         $return_arr['label'] = 'Active';
         $return_arr['class'] = 'label-success';
-    }
-    else if($status == 0)
-    {
+    } else if ($status == 0) {
         $return_arr['label'] = 'Inactive';
         $return_arr['class'] = 'label-danger';
-    } 
+    }
     return $return_arr;
 }
 
 // function for getting the label of the payment status
 
-function getPaymentStatus($status)
-{
+function getPaymentStatus($status) {
     $return_arr = array();
-    if($status == 1)
-    {
+    if ($status == 1) {
         $return_arr['label'] = 'Yes';
         $return_arr['class'] = 'label-success';
-    }
-    else if($status == 0)
-    {
+    } else if ($status == 0) {
         $return_arr['label'] = 'No';
         $return_arr['class'] = 'label-danger';
-    } 
+    }
     return $return_arr;
 }
 
 // function for getting the label of the status
 
-function getPaymentStatusLabel($status)
-{
+function getPaymentStatusLabel($status) {
     $return_arr = array();
-    if($status == 'pending')
-    {
+    if ($status == 'pending') {
         $return_arr['label'] = 'Pending';
         $return_arr['class'] = 'label-warning';
-    }
-    else if($status == 'paid')
-    {
+    } else if ($status == 'paid') {
         $return_arr['label'] = 'Paid';
         $return_arr['class'] = 'label-success';
-    } 
+    }
     return $return_arr;
 }
 
+// function for checking whether the menu will be active or not
 
+function isMenuActive($arr, $controller) {
+    if (in_array($controller, $arr)) {
+        return 'active';
+    }
+}
 
 ?>
