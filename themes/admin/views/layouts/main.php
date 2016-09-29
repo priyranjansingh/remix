@@ -112,9 +112,9 @@
                     <!-- sidebar menu: : style can be found in sidebar.less -->
                     <ul class="sidebar-menu">
                         <li class="header">MAIN NAVIGATION</li>
-                        <li><a href="<?php echo base_url() . "/admin/genres"; ?>"><i class="fa fa-tag"></i> <span>Genres</span></a></li>
-                        <li><a href="<?php echo base_url() . "/admin/version"; ?>"><i class="fa fa-tasks"></i> <span>Version</span></a></li>
-                        <li><a href="<?php echo base_url() . "/admin/coupon"; ?>"><i class="fa fa-barcode"></i> <span>Coupons</span></a></li>
+                        <li class="<?php echo isMenuActive(array('genres'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/genres"; ?>"><i class="fa fa-tag"></i> <span>Genres</span></a></li>
+                        <li class="<?php echo isMenuActive(array('version'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/version"; ?>"><i class="fa fa-tasks"></i> <span>Version</span></a></li>
+                        <li class="<?php echo isMenuActive(array('coupon'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/coupon"; ?>"><i class="fa fa-barcode"></i> <span>Coupons</span></a></li>
                         <li class="treeview <?php echo isMenuActive(array('frontusers','adminusers'),Yii::app()->controller->id); ?>">
                             <a href="#">
                                 <i class="fa fa-users"></i>
@@ -128,7 +128,7 @@
                                 <li class="<?php echo isMenuActive(array('adminusers'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/adminusers"; ?>"><i class="fa fa-circle-o"></i> Admin Users</a></li>
                             </ul>
                         </li>
-                        <li><a href="<?php echo base_url() . "/admin/plans"; ?>"><i class="fa fa-book"></i> <span>Membership Plan</span></a></li>
+                        <li class="<?php echo isMenuActive(array('plans'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/plans"; ?>"><i class="fa fa-book"></i> <span>Membership Plan</span></a></li>
                         <li class="treeview <?php echo isMenuActive(array('remix','originalsong'),Yii::app()->controller->id); ?>">
                             <a href="#">
                                 <i class="fa fa-music"></i>
@@ -142,8 +142,8 @@
                                 <li class="<?php echo isMenuActive(array('originalsong'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/originalsong"; ?>"><i class="fa fa-circle-o"></i> Original Song Management</a></li>
                             </ul>
                         </li>
-                        <li><a href="<?php echo base_url() . "/admin/transactions"; ?>"><i class="fa fa-money"></i> <span>Transactions</span></a></li> 
-                        <li><a href="<?php echo base_url() . "/admin/newsletteremail"; ?>"><i class="fa fa-newspaper-o"></i> <span>Newsletter Emails</span></a></li> 
+                        <li class="<?php echo isMenuActive(array('transactions'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/transactions"; ?>"><i class="fa fa-money"></i> <span>Transactions</span></a></li> 
+                        <li class="<?php echo isMenuActive(array('newsletteremail'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/newsletteremail"; ?>"><i class="fa fa-newspaper-o"></i> <span>Newsletter Emails</span></a></li> 
                         
                     </ul>
                 </section>
