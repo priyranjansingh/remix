@@ -1,12 +1,11 @@
-<script src="<?php echo base_url(); ?>/assets/js/newsletter/newsletter.js"></script>
 <section class="content-header">
     <h1>
         Manage
-        <small>Newsletter Emails</small>
+        <small>Newsletter Category</small>
     </h1>
     <ol class="breadcrumb">
         <li><a href="<?php echo base_url() . '/admin/dashboard'; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-        <li><a href="<?php echo base_url() . '/admin/newsletteremail'; ?>"><i class="fa fa-dashboard"></i> Newsletter Emails</a></li>
+        <li><a href="<?php echo base_url() . '/admin/newslettercategory'; ?>"><i class="fa fa-dashboard"></i> Newsletter Category</a></li>
         <li class="active">Manage</li>
     </ol>
 </section>
@@ -21,7 +20,7 @@
                 <?php
                 Yii::app()->clientScript->registerScript('search', "
 						$('form.search-form').submit(function(){
-							$('#newsletteremail-grid').yiiGridView('update', {
+							$('#newsletter-category-grid').yiiGridView('update', {
 								data: $(this).serialize()
 							});
 							return false;
@@ -36,10 +35,12 @@
                 <div class="box-header">
                     <div class="row">
                         <div class="col-sm-8">
-                            <h3 class="box-title">Newsletter Email List</h3>
+                            <h3 class="box-title">Newsletter Category List</h3>
                         </div>
                         <div class="col-sm-4">
-                           
+                            <a href="<?php echo base_url() . '/admin/newslettercategory/create'; ?>">
+                                <button class="btn btn-block btn-primary">Add Newsletter Category</button>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -50,38 +51,33 @@
                             <div class="col-sm-12 table-responsive">
                                 <?php
                                 $this->widget('zii.widgets.grid.CGridView', array(
-                                    'id' => 'newsletteremail-grid',
+                                    'id' => 'newsletter-category-grid',
                                     'itemsCssClass' => 'table table-bordered table-hover dataTable',
                                     'dataProvider' => $model->search(),
                                     'enablePagination' => true,
                                     // 'filter'=>$model,
                                     'columns' => array(
-                                        'email',
-                                        'date_entered',
-                                        array(
-                                            'name' => 'Subscribed Categories',
-                                            'type' => 'raw',
-                                            //call the method 'get' from the controller
-                                            'value' => array($this, 'getSubscribedCategories'),
-                                            'headerHtmlOptions'=>array('class'=>'header_class'),
-                                        ),
-                                        array(
-                                            'name' => 'Status',
-                                            'type' => 'raw',
-                                            //call the method 'getStatus' from the controller
-                                            'value' => array($this, 'getStatus'),
-                                            'headerHtmlOptions'=>array('class'=>'header_class'),
-                                        ),
+                                        'category',
                                         array(
                                             'class'=>'CButtonColumn',
-                                            'template'=>'{d}', // <-- TEMPLATE WITH THE TWO STATES
+                                            'template'=>'{v} {u} {d}', // <-- TEMPLATE WITH THE TWO STATES
                                             'htmlOptions'=>array(
                                                     'width'=>80,
                                             ),
                                             'buttons' => array(
+                                                'v'=>array(
+                                                        'label'=>'<i class="fa fa-search"></i>',
+                                                        'url'=>'Yii::app()->createUrl("admin/newslettercategory/view", array("id"=>$data->id))',
+                                                        'options'=>array('class'=>'view','title'=>'View'),
+                                                ),
+                                                'u'=>array(
+                                                        'label'=>'<i class="fa fa-edit"></i>',
+                                                        'url'=>'Yii::app()->createUrl("admin/newslettercategory/update", array("id"=>$data->id))',
+                                                        'options'=>array('class'=>'edit','title'=>'Update'),
+                                                ),
                                                 'd'=>array(
                                                         'label'=>'<i class="fa fa-trash"></i>',
-                                                        'url'=>'Yii::app()->createUrl("admin/newsletteremail/delete", array("id"=>$data->id))',
+                                                        'url'=>'Yii::app()->createUrl("admin/newslettercategory/delete", array("id"=>$data->id))',
                                                         'options'=>array('class'=>'delete','title'=>'Delete'),
                                                         'click'=>'function(){return confirm("are you sure ?");}'
                                                 ),

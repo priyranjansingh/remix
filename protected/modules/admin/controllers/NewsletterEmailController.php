@@ -140,6 +140,19 @@ class NewsletterEmailController extends Controller {
     }
     
     
+    public function getSubscribedCategories($data, $row)
+    {
+        return '<a href="'.Yii::app()->createUrl("admin/newsletteremail/viewcategories", array("id"=>$data->id)).'"><span class="label label-success">View</span></a>';
+    }
+    
+    public function actionViewCategories($id)
+    {
+        $this->render('view_categories', array(
+            'model' => $this->loadModel($id),
+        ));
+    }        
+    
+    
     public function actionchangeStatus()
     {
         $id = $_POST['id'];

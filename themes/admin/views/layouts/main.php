@@ -143,8 +143,21 @@
                             </ul>
                         </li>
                         <li class="<?php echo isMenuActive(array('transactions'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/transactions"; ?>"><i class="fa fa-money"></i> <span>Transactions</span></a></li> 
-                        <li class="<?php echo isMenuActive(array('newsletteremail'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/newsletteremail"; ?>"><i class="fa fa-newspaper-o"></i> <span>Newsletter Emails</span></a></li> 
-                        
+                        <li class="treeview <?php echo isMenuActive(array('newsletteremail','newslettercategory'),Yii::app()->controller->id); ?>">
+                            <a href="#">
+                                <i class="fa fa-newspaper-o"></i>
+                                <span>Newsletter Management</span>
+                                <span class="pull-right-container">
+                                    <i class="fa fa-angle-left pull-right"></i>
+                                </span>
+                            </a>
+                            <ul class="treeview-menu">
+                                <li class="<?php echo isMenuActive(array('newsletteremail'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/newsletteremail"; ?>"><i class="fa fa-circle-o"></i> Newsletter Emails</a></li>
+                                <li class="<?php echo isMenuActive(array('newslettercategory'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/newslettercategory"; ?>"><i class="fa fa-circle-o"></i> Newsletter Category</a></li>
+                            </ul>
+                        </li>
+                       <li class="<?php echo isMenuActive(array('emailcampaign'),Yii::app()->controller->id); ?>"><a href="<?php echo base_url() . "/admin/emailcampaign"; ?>"><i class="fa fa-envelope-o"></i> <span>Email Campaign</span></a></li> 
+                          
                     </ul>
                 </section>
                 <!-- /.sidebar -->

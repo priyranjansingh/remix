@@ -1,11 +1,11 @@
 <?php
 
 /**
- * This is the model class for table "newsletter_email".
+ * This is the model class for table "newsletter_category".
  *
- * The followings are the available columns in table 'newsletter_email':
+ * The followings are the available columns in table 'newsletter_category':
  * @property string $id
- * @property string $email
+ * @property string $category
  * @property integer $status
  * @property integer $deleted
  * @property string $created_by
@@ -13,14 +13,14 @@
  * @property string $date_entered
  * @property string $date_modified
  */
-class NewsletterEmail extends AdminBaseModel
+class NewsletterCategory extends AdminBaseModel
 {
 	/**
 	 * @return string the associated database table name
 	 */
 	public function tableName()
 	{
-		return 'newsletter_email';
+		return 'newsletter_category';
 	}
 
 	/**
@@ -31,13 +31,14 @@ class NewsletterEmail extends AdminBaseModel
 		// NOTE: you should only define rules for those attributes that
 		// will receive user inputs.
 		return array(
-			array('id, email, created_by, date_entered', 'required'),
+			array('id, category, created_by, date_entered', 'required'),
 			array('status, deleted', 'numerical', 'integerOnly'=>true),
 			array('id, created_by, modified_by', 'length', 'max'=>36),
+			array('category', 'length', 'max'=>256),
 			array('date_modified', 'safe'),
 			// The following rule is used by search().
 			// @todo Please remove those attributes that should not be searched.
-			array('id, email, status, deleted, created_by, modified_by, date_entered, date_modified', 'safe', 'on'=>'search'),
+			array('id, category, status, deleted, created_by, modified_by, date_entered, date_modified', 'safe', 'on'=>'search'),
 		);
 	}
 
@@ -49,7 +50,6 @@ class NewsletterEmail extends AdminBaseModel
 		// NOTE: you may need to adjust the relation name and the related
 		// class name for the relations automatically generated below.
 		return array(
-                    'category_list' => array(self::HAS_MANY,'NewsletterMapping','newsletter_email_id'),
 		);
 	}
 
@@ -60,7 +60,7 @@ class NewsletterEmail extends AdminBaseModel
 	{
 		return array(
 			'id' => 'ID',
-			'email' => 'Email',
+			'category' => 'Category',
 			'status' => 'Status',
 			'deleted' => 'Deleted',
 			'created_by' => 'Created By',
@@ -89,7 +89,7 @@ class NewsletterEmail extends AdminBaseModel
 		$criteria=new CDbCriteria;
 
 		$criteria->compare('id',$this->id,true);
-		$criteria->compare('email',$this->email,true);
+		$criteria->compare('category',$this->category,true);
 		$criteria->compare('status',$this->status);
 		$criteria->compare('deleted',$this->deleted);
 		$criteria->compare('created_by',$this->created_by,true);
@@ -106,7 +106,7 @@ class NewsletterEmail extends AdminBaseModel
 	 * Returns the static model of the specified AR class.
 	 * Please note that you should have this exact method in all your CActiveRecord descendants!
 	 * @param string $className active record class name.
-	 * @return NewsletterEmail the static model class
+	 * @return NewsletterCategory the static model class
 	 */
 	public static function model($className=__CLASS__)
 	{
