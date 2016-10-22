@@ -51,6 +51,7 @@ class NewsletterMapping extends AdminBaseModel
 		// class name for the relations automatically generated below.
 		return array(
                     'category_name' => array(self::BELONGS_TO, 'NewsletterCategory', 'newsletter_category_id'),
+                    'email_id' => array(self::BELONGS_TO, 'NewsletterEmail', 'newsletter_email_id'),
 		);
 	}
 

@@ -2,6 +2,12 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/models/EmailCampaign.php</file>
+            <file>file:/C:/xampp/htdocs/remix/protected/extensions/smtpmail/PHPMailer.php</file>
+            <file>file:/C:/xampp/htdocs/remix/protected/components/helpers.php</file>
+            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/controllers/EmailCampaignController.php</file>
+            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/views/emailCampaign/email.php</file>
+        </group>
     </open-files>
 </project-private>

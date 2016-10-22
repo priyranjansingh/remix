@@ -35,6 +35,15 @@ return array(
     ),
     // application components
     'components' => array(
+        'Smtpmail'=>array(
+            'class'=>'application.extensions.smtpmail.PHPMailer',
+            'Host'=>"smtp.gmail.com",
+            'Username'=>'arommatech@gmail.com',
+            'Password'=>'priyranjan@neeraj',
+            'Mailer'=>'smtp',
+            'Port'=>465,
+            'SMTPAuth'=>true, 
+        ),
         'user' => array(
             // enable cookie-based authentication
             'allowAutoLogin' => true,

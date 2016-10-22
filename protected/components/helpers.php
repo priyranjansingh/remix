@@ -428,7 +428,8 @@ function callGateway($orderId, $package, $user, $post) {
     }
 }
 
-function mailsend($to, $from, $subject, $message) {
+function mailsend($to,$subject,$message) {
+    $from = "arommatech@gmail.com";
     $mail = Yii::app()->Smtpmail;
     $mail->IsSMTP(); // enable SMTP
     $mail->SMTPDebug = 1; // debugging: 1 = errors and messages, 2 = messages only
@@ -444,7 +445,9 @@ function mailsend($to, $from, $subject, $message) {
 //    } else {
 //        echo "Message has been sent";
 //    }
-    return $mail->Send();
+    $return = $mail->Send();
+    $mail->ClearAddresses();
+    return $return;
 }
 
 //function getMenu()
@@ -706,7 +709,7 @@ function getPlanDurationLabelPaypal($duration) {
     return $label;
 }
 
-// function for removing the special charecters from the string 
+// function for removing the special characters from the string 
 
 function clean($string) {
     $string = str_replace(' ', '-', $string); // Replaces all spaces with hyphens.
@@ -762,5 +765,7 @@ function isMenuActive($arr, $controller) {
         return 'active';
     }
 }
+
+
 
 ?>
