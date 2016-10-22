@@ -12796,3 +12796,201 @@ Stack trace:
 REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
 HTTP_REFERER=http://localhost/remix/index.php/admin/newslettercategory/manage
 ---
+2016/10/22 11:49:19 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/index.php/admin/dashboard
+---
+2016/10/22 11:49:26 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/index.php/admin/genres/manage
+---
+2016/10/22 11:49:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/index.php/admin/version/manage
+---
+2016/10/22 11:49:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/index.php/admin/coupon/manage
+---
+2016/10/22 11:49:32 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/index.php/admin/frontusers/manage
+---
+2016/10/22 11:49:33 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/index.php/admin/adminusers/manage
+---
+2016/10/22 11:49:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/admin/emailcampaign
+---
+2016/10/22 11:58:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/admin/emailcampaign
+---
+2016/10/22 11:58:24 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/admin/emailcampaign
+---
+2016/10/22 11:58:46 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/admin/emailcampaign
+---
+2016/10/22 11:59:10 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/admin/emailcampaign
+---
+2016/10/22 11:59:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/admin/emailcampaign
+---
+2016/10/22 12:00:03 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/admin/emailcampaign
+---
+2016/10/22 12:00:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/admin/emailcampaign
+---
+2016/10/22 12:02:28 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/admin/emailcampaign
+---
+2016/10/22 12:02:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/admin/emailcampaign
+---
+2016/10/22 12:09:14 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/admin/emailcampaign
+---
+2016/10/22 12:09:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/admin/emailcampaign
+---
+2016/10/22 12:09:38 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/index.php/admin/emailcampaign/index
+---
+2016/10/22 12:11:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/index.php/admin/emailcampaign/index
+---
+2016/10/22 12:12:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/index.php/admin/emailcampaign/index
+---
+2016/10/22 12:12:22 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "assets/default/uploads/original/hip-hop/Kalimba.mp3".' in C:\xampp\htdocs\remix\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\remix\framework\web\CWebApplication.php(141): CWebApplication->runController('assets/default/...')
+#1 C:\xampp\htdocs\remix\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\remix\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/remix/assets/uploads/original/hip-hop/Kalimba.mp3
+HTTP_REFERER=http://localhost/remix/admin/emailcampaign
+---

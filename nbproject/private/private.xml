@@ -6,8 +6,10 @@
             <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/models/EmailCampaign.php</file>
             <file>file:/C:/xampp/htdocs/remix/protected/extensions/smtpmail/PHPMailer.php</file>
             <file>file:/C:/xampp/htdocs/remix/protected/components/helpers.php</file>
+            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/models/NewsletterEmail.php</file>
             <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/controllers/EmailCampaignController.php</file>
             <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/views/emailCampaign/email.php</file>
+            <file>file:/C:/xampp/htdocs/remix/protected/modules/admin/models/NewsletterMapping.php</file>
         </group>
     </open-files>
 </project-private>

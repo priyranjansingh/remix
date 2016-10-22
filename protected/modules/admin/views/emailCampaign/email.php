@@ -1,11 +1,22 @@
 <script src="<?php echo base_url(); ?>/assets/ckeditor/ckeditor.js"></script>  
 <script src="<?php echo base_url(); ?>/assets/ckeditor/adapters/jquery.js"></script>
-    
+
 <section class="content-header">
     <h1>
-        Email Campaign
+        Email Campaign 
         <small></small>
     </h1>
+    <?php 
+    if(Yii::app()->user->hasFlash('success'))
+    {    
+    ?>
+    <div class="alert alert-success alert-dismissible">
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">×</button>
+         Mails Has Been Sent Successfully
+    </div>
+    <?php 
+    }
+    ?>
     <ol class="breadcrumb">
         <li><a href="<?php echo base_url() . '/admin/dashboard'; ?>"><i class="fa fa-dashboard"></i> Dashboard</a></li>
         <li><a href="<?php echo base_url() . '/admin/emailcampaign'; ?>"><i class="fa fa-dashboard"></i> Email Campaign</a></li>
@@ -33,23 +44,23 @@
                 }
             }
         }
-        
+
         function showEmailField(user_type)
         {
-            if(user_type !='')
+            if (user_type != '')
             {
-                if(user_type == 'custom_emails')
+                if (user_type == 'custom_emails')
                 {
                     $("#email_list").show();
-                } 
-                else 
+                }
+                else
                 {
-                   $("#email_list").hide(); 
-                }    
-            }    
-        }    
-        
-        
+                    $("#email_list").hide();
+                }
+            }
+        }
+
+
     </script>
 
 
@@ -79,7 +90,7 @@
                             }
                             ?>
                             <?php echo $form->labelEx($model, 'campaign_type'); ?><br>
-                            <?php echo $form->radioButtonList($model, 'campaign_type', array('normal' => 'Normal', 'newsletter' => 'Newsletter'), array('separator' => '&nbsp;&nbsp;','onchange' => 'campaignType(this.value);')); ?>
+                            <?php echo $form->radioButtonList($model, 'campaign_type', array('normal' => 'Normal', 'newsletter' => 'Newsletter'), array('separator' => '&nbsp;&nbsp;', 'onchange' => 'campaignType(this.value);')); ?>
                             <?php echo $form->error($model, 'campaign_type'); ?>
                         </div>
 
@@ -91,7 +102,7 @@
                         ?>
                         <div class="col-xs-12" id="normal" style="display:<?php echo ($model->campaign_type == 'normal') ? 'block' : 'none'; ?>">
                             <?php echo $form->labelEx($model, 'user_type'); ?>
-                            <?php echo $form->dropDownList($model, 'user_type', array('' => 'Select User Type', 'all' => 'All', 'pending' => 'Pending', 'active' => 'Active', 'custom_emails' => 'Custom Emails'), array('class' => 'form-control','onchange' => 'showEmailField(this.value);')); ?>
+                            <?php echo $form->dropDownList($model, 'user_type', array('' => 'Select User Type', 'all' => 'All', 'pending' => 'Pending', 'active' => 'Active', 'custom_emails' => 'Custom Emails'), array('class' => 'form-control', 'onchange' => 'showEmailField(this.value);')); ?>
                             <?php echo $form->error($model, 'user_type'); ?>
                         </div>
                         <div class="col-xs-12" id="newsletter" style="display:<?php echo ($model->campaign_type == 'newsletter') ? 'block' : 'none'; ?>">
@@ -108,7 +119,7 @@
 
                         <div class="col-xs-12" id="email_list" style="display:<?php echo ($model->user_type == 'custom_emails') ? 'block' : 'none'; ?>">
                             <?php echo $form->labelEx($model, 'email_list'); ?>
-                            <?php echo $form->textField($model, 'email_list', array('size' => '60', 'maxlength' => '128', 'class' => 'form-control','placeholder'=>'Enter comma separated emails. Eg. abc@gmail.com, def@gmail.com')); ?>
+                            <?php echo $form->textField($model, 'email_list', array('size' => '60', 'maxlength' => '128', 'class' => 'form-control', 'placeholder' => 'Enter comma separated emails. Eg. abc@gmail.com, def@gmail.com')); ?>
                             <?php echo $form->error($model, 'email_list'); ?>
                         </div>
 

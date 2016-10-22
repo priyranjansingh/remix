@@ -99,7 +99,7 @@ class EmailCampaignController extends Controller {
                         }    
                     }    
                 }
-
+                Yii::app()->user->setFlash('success', "Data saved!");
                 // end of sending emails
                 $this->redirect(array('index'));
             }
